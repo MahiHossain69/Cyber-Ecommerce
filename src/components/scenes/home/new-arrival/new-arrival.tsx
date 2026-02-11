@@ -5,6 +5,7 @@ import Image from "next/image";
 import { Heart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import Link from "next/link";
 
 interface Product {
   id: number;
@@ -178,11 +179,13 @@ export function NewArrival() {
                     {product.category}
                   </span>
                 </div>
+                <Link href="/products">
                 <Button
                   className="w-full cursor-pointer bg-black text-white hover:bg-gray-900 rounded-lg h-12 text-sm font-medium transition-colors"
                 >
                   Buy Now
                 </Button>
+                </Link>
               </div>
             </div>
           ))}

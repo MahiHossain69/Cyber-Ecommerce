@@ -29,8 +29,7 @@
       "model": "iPhone 6",
       "price": 999,
       "currency": "USD",
-      "image": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-6.jpg",
-      "os": "iOS"
+      "image": "/product/iphone 6.webp"
     },
     {
       "id": 4,
@@ -49,7 +48,7 @@
       "model": "iPhone 7",
       "price": 999,
       "currency": "USD",
-      "image": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-7.jpg",
+      "image": "/product/iphone 7.webp",
       "os": "iOS"
     },
     {
@@ -199,7 +198,7 @@
       "model": "Galaxy S20",
       "price": 999,
       "currency": "USD",
-      "image": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s20.jpg",
+      "image": "/product/samsung s20.webp",
       "os": "Android"
     },
     {
@@ -209,7 +208,7 @@
       "model": "Galaxy S21",
       "price": 999,
       "currency": "USD",
-      "image": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s21.jpg",
+      "image": "/product/samsung s21.webp",
       "os": "Android"
     },
     {
@@ -219,7 +218,7 @@
       "model": "Galaxy S22",
       "price": 999,
       "currency": "USD",
-      "image": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s22.jpg",
+      "image": "/product/samsung s22.webp",
       "os": "Android"
     },
     {
@@ -229,7 +228,7 @@
       "model": "Galaxy S23",
       "price": 999,
       "currency": "USD",
-      "image": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s23.jpg",
+      "image": "/product/samsung s23.webp",
       "os": "Android"
     },
     {
@@ -239,7 +238,7 @@
       "model": "Galaxy S24",
       "price": 999,
       "currency": "USD",
-      "image": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s24.jpg",
+      "image": "/product/samsung s24.webp",
       "os": "Android"
     },
     {
@@ -249,7 +248,7 @@
       "model": "Galaxy A52",
       "price": 999,
       "currency": "USD",
-      "image": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-a52.jpg",
+      "image": "/product/samsung a52.webp",
       "os": "Android"
     },
     {
@@ -259,7 +258,7 @@
       "model": "Galaxy A72",
       "price": 999,
       "currency": "USD",
-      "image": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-a72.jpg",
+      "image": "/product/samsung a72.webp",
       "os": "Android"
     },
     {
@@ -269,7 +268,7 @@
       "model": "Galaxy Note 20",
       "price": 999,
       "currency": "USD",
-      "image": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-note20.jpg",
+      "image": "/product/samsung note20.webp",
       "os": "Android"
     },
     {
@@ -295,7 +294,7 @@
     {
       "id": 30,
       "brand": "Xiaomi",
-      "title": "Xiaomi Xiaomi 12",
+      "title": " Xiaomi 12",
       "model": "Xiaomi 12",
       "price": 999,
       "currency": "USD",
@@ -305,17 +304,17 @@
     {
       "id": 31,
       "brand": "Xiaomi",
-      "title": "Xiaomi Xiaomi 13",
+      "title": " Xiaomi 13",
       "model": "Xiaomi 13",
       "price": 999,
       "currency": "USD",
-      "image": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-13.jpg",
+      "image": "/product/xiaomi 13.webp",
       "os": "Android"
     },
     {
       "id": 32,
       "brand": "Xiaomi",
-      "title": "Xiaomi Xiaomi 14",
+      "title": " Xiaomi 14",
       "model": "Xiaomi 14",
       "price": 999,
       "currency": "USD",
@@ -329,8 +328,9 @@
       "model": "Redmi Note 10",
       "price": 999,
       "currency": "USD",
-      "image": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note10.jpg",
+      "image": "/product/redmi note 10.webp",
       "os": "Android"
+
     },
     {
       "id": 34,
@@ -349,7 +349,7 @@
       "model": "Redmi Note 12",
       "price": 999,
       "currency": "USD",
-      "image": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note12.jpg",
+      "image": "/product/redmi note 12.webp",
       "os": "Android"
     },
     {
@@ -359,13 +359,13 @@
       "model": "Redmi Note 13",
       "price": 999,
       "currency": "USD",
-      "image": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note13.jpg",
+      "image": "/product/redmi note 13.webp",
       "os": "Android"
     },
     {
       "id": 37,
       "brand": "Poco",
-      "title": "Poco Poco F3",
+      "title": " Poco F3",
       "model": "Poco F3",
       "price": 999,
       "currency": "USD",
@@ -375,27 +375,27 @@
     {
       "id": 38,
       "brand": "Poco",
-      "title": "Poco Poco F4",
+      "title": "Poco F4",
       "model": "Poco F4",
       "price": 999,
       "currency": "USD",
-      "image": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-poco-f4.jpg",
+      "image": "/product/poco f4.webp",
       "os": "Android"
     },
     {
       "id": 39,
       "brand": "Poco",
-      "title": "Poco Poco F5",
+      "title": " Poco F5",
       "model": "Poco F5",
       "price": 999,
       "currency": "USD",
-      "image": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-poco-f5.jpg",
+      "image": "/product/poco f5.webp",
       "os": "Android"
     },
     {
       "id": 40,
       "brand": "Poco",
-      "title": "Poco Poco X3",
+      "title": " Poco X3",
       "model": "Poco X3",
       "price": 999,
       "currency": "USD",
@@ -405,27 +405,27 @@
     {
       "id": 41,
       "brand": "Poco",
-      "title": "Poco Poco X5",
+      "title": " Poco X5",
       "model": "Poco X5",
       "price": 999,
       "currency": "USD",
-      "image": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-poco-x5.jpg",
+      "image": "/product/poco x5.webp",
       "os": "Android"
     },
     {
       "id": 42,
       "brand": "Oppo",
-      "title": "Oppo Oppo Find X3",
+      "title": "Oppo  Find X3",
       "model": "Oppo Find X3",
       "price": 999,
       "currency": "USD",
-      "image": "https://fdn2.gsmarena.com/vv/bigpic/oppo-find-x3.jpg",
+      "image": "/product/oppo find x3.jpg",
       "os": "Android"
     },
     {
       "id": 43,
       "brand": "Oppo",
-      "title": "Oppo Oppo Find X5",
+      "title": "Oppo  Find X5",
       "model": "Oppo Find X5",
       "price": 999,
       "currency": "USD",
@@ -435,17 +435,17 @@
     {
       "id": 44,
       "brand": "Oppo",
-      "title": "Oppo Oppo Reno 6",
+      "title": "Oppo  Reno 6",
       "model": "Oppo Reno 6",
       "price": 999,
       "currency": "USD",
-      "image": "https://fdn2.gsmarena.com/vv/bigpic/oppo-reno6.jpg",
+      "image": "/product/oppo reno6.webp",
       "os": "Android"
     },
     {
       "id": 45,
       "brand": "Oppo",
-      "title": "Oppo Oppo Reno 8",
+      "title": " Oppo Reno 8",
       "model": "Oppo Reno 8",
       "price": 999,
       "currency": "USD",
@@ -455,7 +455,7 @@
     {
       "id": 46,
       "brand": "Oppo",
-      "title": "Oppo Oppo Reno 10",
+      "title": "Oppo  Reno 10",
       "model": "Oppo Reno 10",
       "price": 999,
       "currency": "USD",
@@ -465,7 +465,7 @@
     {
       "id": 47,
       "brand": "Realme",
-      "title": "Realme Realme 8",
+      "title": " Realme 8",
       "model": "Realme 8",
       "price": 999,
       "currency": "USD",
@@ -475,17 +475,17 @@
     {
       "id": 48,
       "brand": "Realme",
-      "title": "Realme Realme 9",
+      "title": " Realme 9",
       "model": "Realme 9",
       "price": 999,
       "currency": "USD",
-      "image": "https://fdn2.gsmarena.com/vv/bigpic/realme-9.jpg",
+      "image": "/product/realme9.webp",
       "os": "Android"
     },
     {
       "id": 49,
       "brand": "Realme",
-      "title": "Realme Realme 10",
+      "title": " Realme 10",
       "model": "Realme 10",
       "price": 999,
       "currency": "USD",
@@ -495,17 +495,17 @@
     {
       "id": 50,
       "brand": "Realme",
-      "title": "Realme Realme GT",
+      "title": " Realme GT",
       "model": "Realme GT",
       "price": 999,
       "currency": "USD",
-      "image": "https://fdn2.gsmarena.com/vv/bigpic/realme-gt.jpg",
+      "image": "/product/realme gt.webp",
       "os": "Android"
     },
     {
       "id": 51,
       "brand": "Realme",
-      "title": "Realme Realme GT Neo 3",
+      "title": "Realme  GT Neo 3",
       "model": "Realme GT Neo 3",
       "price": 999,
       "currency": "USD",
@@ -515,17 +515,17 @@
     {
       "id": 52,
       "brand": "Nokia",
-      "title": "Nokia Nokia 5.4",
+      "title": "Nokia  5.4",
       "model": "Nokia 5.4",
       "price": 999,
       "currency": "USD",
-      "image": "https://fdn2.gsmarena.com/vv/bigpic/nokia-54.jpg",
+      "image": "/product/nokia5.4.jpg",
       "os": "Android"
     },
     {
       "id": 53,
       "brand": "Nokia",
-      "title": "Nokia Nokia 6.2",
+      "title": "Nokia  6.2",
       "model": "Nokia 6.2",
       "price": 999,
       "currency": "USD",
@@ -535,7 +535,7 @@
     {
       "id": 54,
       "brand": "Nokia",
-      "title": "Nokia Nokia 7.2",
+      "title": "Nokia  7.2",
       "model": "Nokia 7.2",
       "price": 999,
       "currency": "USD",
@@ -545,7 +545,7 @@
     {
       "id": 55,
       "brand": "Nokia",
-      "title": "Nokia Nokia X10",
+      "title": "Nokia  X10",
       "model": "Nokia X10",
       "price": 999,
       "currency": "USD",
@@ -555,7 +555,7 @@
     {
       "id": 56,
       "brand": "Nokia",
-      "title": "Nokia Nokia X20",
+      "title": "Nokia  X20",
       "model": "Nokia X20",
       "price": 999,
       "currency": "USD",
@@ -579,7 +579,7 @@
       "model": "Moto G Stylus",
       "price": 999,
       "currency": "USD",
-      "image": "https://fdn2.gsmarena.com/vv/bigpic/motorola-moto-g-stylus.jpg",
+      "image": "/product/motorola moto g stylus.webp",
       "os": "Android"
     },
     {
@@ -589,13 +589,13 @@
       "model": "Motorola Edge 30",
       "price": 999,
       "currency": "USD",
-      "image": "https://fdn2.gsmarena.com/vv/bigpic/motorola-edge30.jpg",
+      "image": "/product/motorola edge30.webp",
       "os": "Android"
     },
     {
       "id": 60,
       "brand": "Motorola",
-      "title": "Motorola Motorola Edge 40",
+      "title": "Motorola  Edge 40",
       "model": "Motorola Edge 40",
       "price": 999,
       "currency": "USD",
@@ -615,17 +615,17 @@
     {
       "id": 62,
       "brand": "Honor",
-      "title": "Honor Honor 50",
+      "title": "Honor  50",
       "model": "Honor 50",
       "price": 999,
       "currency": "USD",
-      "image": "https://fdn2.gsmarena.com/vv/bigpic/honor-50.jpg",
+      "image": "/product/honor50.jpg",
       "os": "Android"
     },
     {
       "id": 63,
       "brand": "Honor",
-      "title": "Honor Honor 70",
+      "title": "Honor  70",
       "model": "Honor 70",
       "price": 999,
       "currency": "USD",
@@ -659,7 +659,7 @@
       "model": "Honor Magic5",
       "price": 999,
       "currency": "USD",
-      "image": "https://fdn2.gsmarena.com/vv/bigpic/honor-magic5.jpg",
+      "image": "/product/honor magic5.webp",
       "os": "Android"
     }
   ]

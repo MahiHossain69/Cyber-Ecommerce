@@ -4,7 +4,7 @@ import { NewArrival } from "@/components/scenes/home/new-arrival";
 import { PopularProducts } from "@/components/scenes/home/popular-products";
 import { Discount } from "@/components/scenes/home/discount";
 import { Banner } from "@/components/scenes/home/banner";
-import { Playstation } from "@/components/scenes/playstation";
+import { Playstation } from "@/components/scenes/home/playstation/playstation";
 
 export default function Home() {
   return (
