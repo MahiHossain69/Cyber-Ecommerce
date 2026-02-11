@@ -94,18 +94,19 @@ export function NewArrival() {
         {/* Tabs */}
         <div className="flex gap-6 sm:gap-8 mb-8 sm:mb-12 overflow-x-auto">
           {tabs.map((tab) => (
-            <button
+            <Button
               key={tab}
+              variant="ghost"
               onClick={() => setActiveTab(tab)}
               className={cn(
-                "pb-3 text-sm sm:text-base font-medium transition-colors relative whitespace-nowrap",
+                "pb-3 px-0 h-auto text-sm sm:text-base font-medium transition-colors relative whitespace-nowrap hover:bg-transparent",
                 activeTab === tab
                   ? "text-black after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:bg-black"
                   : "text-gray-400 hover:text-gray-600"
               )}
             >
               {tab}
-            </button>
+            </Button>
           ))}
         </div>
 
@@ -118,9 +119,11 @@ export function NewArrival() {
             >
               {/* Product Image */}
               <div className="relative aspect-square bg-[#F6F6F6] p-8">
-                <button
+                <Button
+                  variant="ghost"
+                  size="icon"
                   onClick={() => toggleLike(product.id)}
-                  className="absolute top-4 right-4 z-10 w-9 h-9 flex items-center justify-center rounded-full hover:bg-white/50 transition-colors"
+                  className="absolute top-4 right-4 z-10 w-9 h-9 rounded-full bg-black hover:bg-gray-400 transition-all duration-500 ease-in-out cursor-pointer"
                   aria-label="Add to wishlist"
                 >
                   <Heart
@@ -131,7 +134,7 @@ export function NewArrival() {
                         : "text-gray-300 hover:text-gray-400"
                     )}
                   />
-                </button>
+                </Button>
                 <div className="relative w-full h-full flex items-center justify-center">
                   <Image
                     src={product.image}
@@ -176,7 +179,7 @@ export function NewArrival() {
                   </span>
                 </div>
                 <Button
-                  className="w-full bg-black text-white hover:bg-gray-900 rounded-lg h-12 text-sm font-medium transition-colors"
+                  className="w-full cursor-pointer bg-black text-white hover:bg-gray-900 rounded-lg h-12 text-sm font-medium transition-colors"
                 >
                   Buy Now
                 </Button>
