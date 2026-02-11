@@ -1,0 +1,78 @@
+{
+  "success": true,
+  "total": 8,
+  "products": [
+    {
+      "id": 1,
+      "category": "Smart Watches",
+      "name": "Apple Watch Series 9 GPS 45mm Midnight Aluminum Case",
+      "price": 429,
+      "bestseller": true,
+      "featured": true,
+      "image": "/product/apple watch series 9.png"
+    },
+    {
+      "id": 2,
+      "category": "Smart Watches",
+      "name": "Samsung Galaxy Watch6 Classic 47mm Black",
+      "price": 399,
+      "bestseller": false,
+      "featured": true,
+      "image": "/product/sumsung galaxy watch 6.png"
+    },
+    {
+      "id": 3,
+      "category": "Phones",
+      "name": "iPhone 15 Pro 128GB Natural Titanium",
+      "price": 999,
+      "bestseller": true,
+      "featured": true,
+      "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-15-pro-naturaltitanium-select?wid=470&hei=556&fmt=png-alpha&.v=1692895395658"
+    },
+    {
+      "id": 4,
+      "category": "Phones",
+      "name": "Samsung Galaxy S24 Ultra 256GB Titanium Black",
+      "price": 1299,
+      "bestseller": true,
+      "featured": false,
+      "image": "/product/sumsung galaxy s24 ultra 5g.png"
+    },
+    {
+      "id": 5,
+      "category": "Cameras",
+      "name": "Sony Alpha A7 IV Mirrorless Camera Body",
+      "price": 2498,
+      "bestseller": false,
+      "featured": true,
+      "image": "/product/sony alpha 7.png"
+    },
+    {
+      "id": 6,
+      "category": "Headphones",
+      "name": "Sony WH-1000XM5 Wireless Noise Canceling Headphones",
+      "price": 399,
+      "bestseller": true,
+      "featured": false,
+      "image": "/product/sony wh-1000xm5.png"
+    },
+    {
+      "id": 7,
+      "category": "Computers",
+      "name": "MacBook Pro 14-inch M3 Pro 512GB Space Black",
+      "price": 2399,
+      "bestseller": false,
+      "featured": true,
+      "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mbp14-spacegray-select-202310?wid=904&hei=840&fmt=jpeg&qlt=90&.v=1697311054290"
+    },
+    {
+      "id": 8,
+      "category": "Gaming",
+      "name": "PlayStation 5 Console",
+      "price": 499,
+      "bestseller": true,
+      "featured": true,
+      "image": "https://gmedia.playstation.com/is/image/SIEPDC/ps5-product-thumbnail-01-en-14sep21?$facebook$"
+    }
+  ]
+}
