@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { Heart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
@@ -11,24 +12,28 @@ const discountProducts = [
     id: 1,
     name: "Apple iPhone 14 Pro 512GB Gold (MQ233)",
     price: 1437,
+    category: "Phones",
     image: "/discount/Iphone 14 pro.svg",
   },
   {
     id: 2,
     name: "AirPods Max Silver Starlight Aluminium",
     price: 549,
+    category: "Headphones",
     image: "/discount/Airpod max.svg",
   },
   {
     id: 3,
     name: "Apple Watch Series 9 GPS 41mm Starlight Aluminium",
     price: 399,
+    category: "Smart Watches",
     image: "/discount/Apple watch.svg",
   },
   {
     id: 4,
     name: "Apple iPhone 14 Pro 1TB Gold (MQ2V3)",
     price: 1499,
+    category: "Phones",
     image: "/discount/Iphone 14 pro 1tb.svg",
   },
 ];
@@ -42,6 +47,19 @@ export function Discount() {
         ? prev.filter((id) => id !== productId)
         : [...prev, productId]
     );
+  };
+
+  // Get category link based on product category
+  const getCategoryLink = (category: string) => {
+    const categoryMap: Record<string, string> = {
+      "Phones": "/smartphones",
+      "Smart Watches": "/smartwatches",
+      "Cameras": "/cameras",
+      "Headphones": "/headphones",
+      "Computers": "/computers",
+      "Gaming": "/gaming",
+    };
+    return categoryMap[category] || "/products";
   };
 
   return (
@@ -96,9 +114,11 @@ export function Discount() {
                 <p className="text-2xl font-semibold text-black">
                   ${product.price}
                 </p>
-                <Button className="w-full bg-black text-white hover:bg-gray-900 cursor-pointer rounded-lg h-12 text-sm font-medium transition-colors">
-                  Buy Now
-                </Button>
+                <Link href={getCategoryLink(product.category)}>
+                  <Button className="w-full bg-black text-white hover:bg-gray-900 cursor-pointer rounded-lg h-12 text-sm font-medium transition-colors">
+                    Buy Now
+                  </Button>
+                </Link>
               </div>
             </div>
           ))}

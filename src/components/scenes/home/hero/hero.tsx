@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import Link from "next/link";
 
 export function Hero() {
   return (
@@ -29,6 +30,7 @@ export function Hero() {
             </p>
 
             {/* CTA Button */}
+            <Link href="/smartphones">
             <Button
               variant="outline"
               size="lg"
@@ -36,6 +38,7 @@ export function Hero() {
             >
               Shop Now
             </Button>
+            </Link>
           </div>
 
           {/* Right Content - Phone Image */}

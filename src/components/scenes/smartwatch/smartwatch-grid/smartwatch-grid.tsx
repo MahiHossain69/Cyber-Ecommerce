@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import { Heart } from "lucide-react";
+import { Heart, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   Select,
@@ -13,27 +13,24 @@ import {
 } from "@/components/ui/select";
 import { cn } from "@/lib/utils";
 
-interface Phone {
+interface Smartwatch {
   id: number;
   brand: string;
-  model: string;
-  price: number;
+  title: string;
+  battery: string;
+  star: number;
+  reviews: number;
   image: string;
-  batteryCapacity?: string;
-  screenType?: string;
-  screenDiagonal?: string;
-  protectionClass?: string;
-  builtInMemory?: string;
-  rating?: number;
+  price?: number;
 }
 
-interface ProductGridProps {
-  phones: Phone[];
+interface SmartwatchGridProps {
+  watches: Smartwatch[];
   totalCount: number;
   onSortChange: (sortBy: string) => void;
 }
 
-export function ProductGrid({ phones, totalCount, onSortChange }: ProductGridProps) {
+export function SmartwatchGrid({ watches, totalCount, onSortChange }: SmartwatchGridProps) {
   const [sortBy, setSortBy] = useState("rating");
   const [likedProducts, setLikedProducts] = useState<number[]>([]);
 
@@ -59,23 +56,23 @@ export function ProductGrid({ phones, totalCount, onSortChange }: ProductGridPro
           <span className="font-semibold text-black">{totalCount}</span>
         </p>
         <Select value={sortBy} onValueChange={handleSortChange}>
-          <SelectTrigger className="w-45 focus:ring-0 focus:ring-offset-0 cursor-pointer">
+          <SelectTrigger className="w-[180px]">
             <SelectValue placeholder="By rating" />
           </SelectTrigger>
           <SelectContent>
-            <SelectItem value="rating" className="cursor-pointer">By rating</SelectItem>
-            <SelectItem value="price-low"  className="cursor-pointer">Price: Low to High</SelectItem>
-            <SelectItem value="price-high"  className="cursor-pointer">Price: High to Low</SelectItem>
-            <SelectItem value="name"  className="cursor-pointer">Name: A to Z</SelectItem>
+            <SelectItem value="rating">By rating</SelectItem>
+            <SelectItem value="price-low">Price: Low to High</SelectItem>
+            <SelectItem value="price-high">Price: High to Low</SelectItem>
+            <SelectItem value="name">Name: A to Z</SelectItem>
           </SelectContent>
         </Select>
       </div>
 
       {/* Products Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-        {phones.map((phone) => (
+        {watches.map((watch) => (
           <div
-            key={phone.id}
+            key={watch.id}
             className="bg-gray-100 rounded-lg overflow-hidden flex flex-col"
           >
             {/* Product Image */}
@@ -83,14 +80,14 @@ export function ProductGrid({ phones, totalCount, onSortChange }: ProductGridPro
               <Button
                 variant="ghost"
                 size="icon"
-                onClick={() => toggleLike(phone.id)}
-                className="absolute top-4 right-4 z-10 w-9 h-9 rounded-full bg-black cursor-pointer hover:bg-gray-400 transition-colors"
+                onClick={() => toggleLike(watch.id)}
+                className="absolute top-4 right-4 z-10 w-9 h-9 rounded-full hover:bg-white/50 transition-colors"
                 aria-label="Add to wishlist"
               >
                 <Heart
                   className={cn(
                     "w-5 h-5 transition-all",
-                    likedProducts.includes(phone.id)
+                    likedProducts.includes(watch.id)
                       ? "fill-red-500 text-red-500"
                       : "text-gray-300 hover:text-gray-400"
                   )}
@@ -98,8 +95,8 @@ export function ProductGrid({ phones, totalCount, onSortChange }: ProductGridPro
               </Button>
               <div className="relative w-full h-full flex items-center justify-center">
                 <Image
-                  src={phone.image}
-                  alt={`${phone.brand} ${phone.model}`}
+                  src={watch.image}
+                  alt={watch.title}
                   fill
                   className="object-contain"
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
@@ -110,12 +107,22 @@ export function ProductGrid({ phones, totalCount, onSortChange }: ProductGridPro
             {/* Product Info */}
             <div className="p-6 flex flex-col gap-4 bg-white">
               <h3 className="text-base font-medium text-black line-clamp-2 min-h-12 leading-snug">
-                {phone.brand} {phone.model}
+                {watch.title}
               </h3>
+              
+              {/* Rating */}
+              <div className="flex items-center gap-2">
+                <div className="flex items-center gap-1">
+                  <Star className="w-4 h-4 fill-yellow-400 text-yellow-400" />
+                  <span className="text-sm font-medium">{watch.star}</span>
+                </div>
+                <span className="text-sm text-gray-500">({watch.reviews} reviews)</span>
+              </div>
+
               <p className="text-2xl font-semibold text-black">
-                ${phone.price}
+                ${watch.price || 299}
               </p>
-              <Button className="w-full cursor-pointer bg-black text-white hover:bg-gray-900 rounded-lg h-12 text-sm font-medium transition-colors">
+              <Button className="w-full bg-black text-white hover:bg-gray-900 rounded-lg h-12 text-sm font-medium transition-colors">
                 Buy Now
               </Button>
             </div>

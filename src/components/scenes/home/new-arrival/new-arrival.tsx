@@ -77,6 +77,19 @@ export function NewArrival() {
     }
   };
 
+  // Get category link based on product category
+  const getCategoryLink = (category: string) => {
+    const categoryMap: Record<string, string> = {
+      "Phones": "/smartphones",
+      "Smart Watches": "/smartwatches",
+      "Cameras": "/cameras",
+      "Headphones": "/headphones",
+      "Computers": "/computers",
+      "Gaming": "/gaming",
+    };
+    return categoryMap[category] || "/smartphones";
+  };
+
   const currentProducts = getFilteredProducts();
 
   if (loading) {
@@ -100,7 +113,7 @@ export function NewArrival() {
               variant="ghost"
               onClick={() => setActiveTab(tab)}
               className={cn(
-                "pb-3 px-0 h-auto text-sm sm:text-base font-medium transition-colors relative whitespace-nowrap hover:bg-transparent",
+                "pb-3 px-0 h-auto cursor-pointer text-sm sm:text-base font-medium transition-colors relative whitespace-nowrap hover:bg-transparent",
                 activeTab === tab
                   ? "text-black after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:bg-black"
                   : "text-gray-400 hover:text-gray-600"
@@ -179,12 +192,10 @@ export function NewArrival() {
                     {product.category}
                   </span>
                 </div>
-                <Link href="/products">
-                <Button
-                  className="w-full cursor-pointer bg-black text-white hover:bg-gray-900 rounded-lg h-12 text-sm font-medium transition-colors"
-                >
-                  Buy Now
-                </Button>
+                <Link href={getCategoryLink(product.category)}>
+                  <Button className="w-full cursor-pointer bg-black text-white hover:bg-gray-900 rounded-lg h-12 text-sm font-medium transition-colors">
+                    Buy Now
+                  </Button>
                 </Link>
               </div>
             </div>

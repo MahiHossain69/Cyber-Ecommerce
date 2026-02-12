@@ -13,68 +13,64 @@ import { cn } from "@/lib/utils";
 
 interface FiltersProps {
   brands: string[];
-  phoneCounts: Record<string, number>;
+  watchCounts: Record<string, number>;
   selectedBrands: string[];
   searchQuery: string;
   brandOpen: boolean;
-  phones: Phone[];
+  watches: Smartwatch[];
   onBrandToggle: (brand: string) => void;
   onSearchChange: (query: string) => void;
   onBrandOpenChange: (open: boolean) => void;
 }
 
-interface Phone {
+interface Smartwatch {
   id: number;
   brand: string;
-  model: string;
-  price: number;
+  title: string;
+  battery: string;
+  star: number;
+  reviews: number;
   image: string;
-  batteryCapacity?: string;
-  screenType?: string;
-  screenDiagonal?: string;
-  protectionClass?: string;
-  builtInMemory?: string;
+  displayType?: string;
+  waterResistance?: string;
+  connectivity?: string;
 }
 
 export function Filters({
   brands,
-  phoneCounts,
+  watchCounts,
   selectedBrands,
   searchQuery,
   brandOpen,
-  phones,
+  watches,
   onBrandToggle,
   onSearchChange,
   onBrandOpenChange,
 }: FiltersProps) {
   const [batteryOpen, setBatteryOpen] = useState(false);
-  const [screenTypeOpen, setScreenTypeOpen] = useState(false);
-  const [screenDiagonalOpen, setScreenDiagonalOpen] = useState(false);
-  const [protectionOpen, setProtectionOpen] = useState(false);
-  const [memoryOpen, setMemoryOpen] = useState(false);
+  const [displayOpen, setDisplayOpen] = useState(false);
+  const [waterResistanceOpen, setWaterResistanceOpen] = useState(false);
+  const [connectivityOpen, setConnectivityOpen] = useState(false);
 
   // Get unique values for each filter
-  const batteryCapacities = Array.from(
-    new Set(phones.map((p) => p.batteryCapacity).filter(Boolean))
+  const batteries = Array.from(
+    new Set(watches.map((w) => w.battery).filter(Boolean))
   ).sort();
-  const screenTypes = Array.from(
-    new Set(phones.map((p) => p.screenType).filter(Boolean))
+  const displayTypes = Array.from(
+    new Set(watches.map((w) => w.displayType).filter(Boolean))
   ).sort();
-  const screenDiagonals = Array.from(
-    new Set(phones.map((p) => p.screenDiagonal).filter(Boolean))
+  const waterResistances = Array.from(
+    new Set(watches.map((w) => w.waterResistance).filter(Boolean))
   ).sort();
-  const protectionClasses = Array.from(
-    new Set(phones.map((p) => p.protectionClass).filter(Boolean))
-  ).sort();
-  const builtInMemories = Array.from(
-    new Set(phones.map((p) => p.builtInMemory).filter(Boolean))
+  const connectivities = Array.from(
+    new Set(watches.map((w) => w.connectivity).filter(Boolean))
   ).sort();
 
   return (
     <aside className="w-full lg:w-64 shrink-0">
       {/* Brand Filter */}
       <Collapsible open={brandOpen} onOpenChange={onBrandOpenChange}>
-        <CollapsibleTrigger className="flex cursor-pointer items-center justify-between w-full py-4 border-b">
+        <CollapsibleTrigger className="flex items-center justify-between w-full py-4 border-b">
           <span className="font-medium text-black">Brand</span>
           <ChevronDown
             className={cn(
@@ -98,7 +94,7 @@ export function Filters({
           {/* Brand Checkboxes */}
           <div className="space-y-3">
             {brands.map((brand) => {
-              const count = phoneCounts[brand] || 0;
+              const count = watchCounts[brand] || 0;
               return (
                 <div
                   key={brand}
@@ -127,7 +123,7 @@ export function Filters({
 
       {/* Battery Capacity Filter */}
       <Collapsible open={batteryOpen} onOpenChange={setBatteryOpen}>
-        <CollapsibleTrigger className="flex items-center justify-between w-full py-4 border-b cursor-pointer">
+        <CollapsibleTrigger className="flex items-center justify-between w-full py-4 border-b">
           <span className="font-medium text-black">Battery capacity</span>
           <ChevronDown
             className={cn(
@@ -138,14 +134,14 @@ export function Filters({
         </CollapsibleTrigger>
         <CollapsibleContent className="pt-4 pb-6">
           <div className="space-y-3">
-            {batteryCapacities.map((capacity) => (
-              <div key={capacity} className="flex items-center space-x-2">
-                <Checkbox id={`battery-${capacity}`} />
+            {batteries.map((battery) => (
+              <div key={battery} className="flex items-center space-x-2">
+                <Checkbox id={`battery-${battery}`} />
                 <label
-                  htmlFor={`battery-${capacity}`}
+                  htmlFor={`battery-${battery}`}
                   className="text-sm font-medium leading-none cursor-pointer"
                 >
-                  {capacity}
+                  {battery}
                 </label>
               </div>
             ))}
@@ -153,24 +149,24 @@ export function Filters({
         </CollapsibleContent>
       </Collapsible>
 
-      {/* Screen Type Filter */}
-      <Collapsible open={screenTypeOpen} onOpenChange={setScreenTypeOpen}>
-        <CollapsibleTrigger className="flex cursor-pointer items-center justify-between w-full py-4 border-b">
-          <span className="font-medium text-black">Screen type</span>
+      {/* Display Type Filter */}
+      <Collapsible open={displayOpen} onOpenChange={setDisplayOpen}>
+        <CollapsibleTrigger className="flex items-center justify-between w-full py-4 border-b">
+          <span className="font-medium text-black">Display type</span>
           <ChevronDown
             className={cn(
               "w-5 h-5 transition-transform",
-              screenTypeOpen && "rotate-180"
+              displayOpen && "rotate-180"
             )}
           />
         </CollapsibleTrigger>
         <CollapsibleContent className="pt-4 pb-6">
           <div className="space-y-3">
-            {screenTypes.map((type) => (
+            {displayTypes.map((type) => (
               <div key={type} className="flex items-center space-x-2">
-                <Checkbox id={`screen-${type}`} />
+                <Checkbox id={`display-${type}`} />
                 <label
-                  htmlFor={`screen-${type}`}
+                  htmlFor={`display-${type}`}
                   className="text-sm font-medium leading-none cursor-pointer"
                 >
                   {type}
@@ -181,27 +177,27 @@ export function Filters({
         </CollapsibleContent>
       </Collapsible>
 
-      {/* Screen Diagonal Filter */}
-      <Collapsible open={screenDiagonalOpen} onOpenChange={setScreenDiagonalOpen}>
-        <CollapsibleTrigger className="flex cursor-pointer items-center justify-between w-full py-4 border-b">
-          <span className="font-medium text-black">Screen diagonal</span>
+      {/* Water Resistance Filter */}
+      <Collapsible open={waterResistanceOpen} onOpenChange={setWaterResistanceOpen}>
+        <CollapsibleTrigger className="flex items-center justify-between w-full py-4 border-b">
+          <span className="font-medium text-black">Water resistance</span>
           <ChevronDown
             className={cn(
               "w-5 h-5 transition-transform",
-              screenDiagonalOpen && "rotate-180"
+              waterResistanceOpen && "rotate-180"
             )}
           />
         </CollapsibleTrigger>
         <CollapsibleContent className="pt-4 pb-6">
           <div className="space-y-3">
-            {screenDiagonals.map((size) => (
-              <div key={size} className="flex items-center space-x-2">
-                <Checkbox id={`diagonal-${size}`} />
+            {waterResistances.map((resistance) => (
+              <div key={resistance} className="flex items-center space-x-2">
+                <Checkbox id={`water-${resistance}`} />
                 <label
-                  htmlFor={`diagonal-${size}`}
+                  htmlFor={`water-${resistance}`}
                   className="text-sm font-medium leading-none cursor-pointer"
                 >
-                  {size}
+                  {resistance}
                 </label>
               </div>
             ))}
@@ -209,55 +205,27 @@ export function Filters({
         </CollapsibleContent>
       </Collapsible>
 
-      {/* Protection Class Filter */}
-      <Collapsible open={protectionOpen} onOpenChange={setProtectionOpen}>
-        <CollapsibleTrigger className="flex cursor-pointer items-center justify-between w-full py-4 border-b">
-          <span className="font-medium text-black">Protection class</span>
+      {/* Connectivity Filter */}
+      <Collapsible open={connectivityOpen} onOpenChange={setConnectivityOpen}>
+        <CollapsibleTrigger className="flex items-center justify-between w-full py-4 border-b">
+          <span className="font-medium text-black">Connectivity</span>
           <ChevronDown
             className={cn(
               "w-5 h-5 transition-transform",
-              protectionOpen && "rotate-180"
+              connectivityOpen && "rotate-180"
             )}
           />
         </CollapsibleTrigger>
         <CollapsibleContent className="pt-4 pb-6">
           <div className="space-y-3">
-            {protectionClasses.map((protection) => (
-              <div key={protection} className="flex items-center space-x-2">
-                <Checkbox id={`protection-${protection}`} />
+            {connectivities.map((connectivity) => (
+              <div key={connectivity} className="flex items-center space-x-2">
+                <Checkbox id={`connectivity-${connectivity}`} />
                 <label
-                  htmlFor={`protection-${protection}`}
+                  htmlFor={`connectivity-${connectivity}`}
                   className="text-sm font-medium leading-none cursor-pointer"
                 >
-                  {protection}
-                </label>
-              </div>
-            ))}
-          </div>
-        </CollapsibleContent>
-      </Collapsible>
-
-      {/* Built-in Memory Filter */}
-      <Collapsible open={memoryOpen} onOpenChange={setMemoryOpen}>
-        <CollapsibleTrigger className="flex cursor-pointer items-center justify-between w-full py-4 border-b">
-          <span className="font-medium text-black">Built-in memory</span>
-          <ChevronDown
-            className={cn(
-              "w-5 h-5 transition-transform",
-              memoryOpen && "rotate-180"
-            )}
-          />
-        </CollapsibleTrigger>
-        <CollapsibleContent className="pt-4 pb-6">
-          <div className="space-y-3">
-            {builtInMemories.map((memory) => (
-              <div key={memory} className="flex items-center space-x-2">
-                <Checkbox id={`memory-${memory}`} />
-                <label
-                  htmlFor={`memory-${memory}`}
-                  className="text-sm font-medium leading-none cursor-pointer"
-                >
-                  {memory}
+                  {connectivity}
                 </label>
               </div>
             ))}
