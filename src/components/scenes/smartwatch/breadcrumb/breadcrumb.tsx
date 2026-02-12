@@ -8,7 +8,7 @@ export function Breadcrumb() {
         Home
       </Link>
       <ChevronRight className="w-4 h-4 text-gray-400" />
-      <Link href="/catalog" className="text-gray-400 hover:text-black">
+      <Link href="/" className="text-gray-400 hover:text-black">
         Catalog
       </Link>
       <ChevronRight className="w-4 h-4 text-gray-400" />

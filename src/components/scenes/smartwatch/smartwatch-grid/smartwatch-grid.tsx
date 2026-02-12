@@ -56,7 +56,7 @@ export function SmartwatchGrid({ watches, totalCount, onSortChange }: Smartwatch
           <span className="font-semibold text-black">{totalCount}</span>
         </p>
         <Select value={sortBy} onValueChange={handleSortChange}>
-          <SelectTrigger className="w-[180px]">
+          <SelectTrigger className="w-45 focus:ring-0 focus:ring-offset-0 cursor-pointer">
             <SelectValue placeholder="By rating" />
           </SelectTrigger>
           <SelectContent>
