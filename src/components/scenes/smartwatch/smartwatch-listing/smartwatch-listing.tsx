@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { Breadcrumb } from "../breadcrumb";
 import { Filters } from "../filters";
 import { SmartwatchGrid } from "../smartwatch-grid";
-import { Pagination } from "../../product/pagination";
+import { Pagination } from "../../smartphone/pagination";
 
 interface Smartwatch {
   id: number;
