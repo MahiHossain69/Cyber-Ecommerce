@@ -60,10 +60,10 @@ export function SmartwatchGrid({ watches, totalCount, onSortChange }: Smartwatch
             <SelectValue placeholder="By rating" />
           </SelectTrigger>
           <SelectContent>
-            <SelectItem value="rating">By rating</SelectItem>
-            <SelectItem value="price-low">Price: Low to High</SelectItem>
-            <SelectItem value="price-high">Price: High to Low</SelectItem>
-            <SelectItem value="name">Name: A to Z</SelectItem>
+            <SelectItem value="rating" className="cursor-pointer">By rating</SelectItem>
+            <SelectItem value="price-low" className="cursor-pointer">Price: Low to High</SelectItem>
+            <SelectItem value="price-high" className="cursor-pointer">Price: High to Low</SelectItem>
+            <SelectItem value="name" className="cursor-pointer">Name: A to Z</SelectItem>
           </SelectContent>
         </Select>
       </div>
@@ -81,7 +81,7 @@ export function SmartwatchGrid({ watches, totalCount, onSortChange }: Smartwatch
                 variant="ghost"
                 size="icon"
                 onClick={() => toggleLike(watch.id)}
-                className="absolute top-4 right-4 z-10 w-9 h-9 rounded-full hover:bg-white/50 transition-colors"
+                className="absolute top-4 right-4 z-10 w-9 h-9 rounded-full bg-black cursor-pointer hover:bg-gray-400 transition-colors"
                 aria-label="Add to wishlist"
               >
                 <Heart
@@ -122,7 +122,7 @@ export function SmartwatchGrid({ watches, totalCount, onSortChange }: Smartwatch
               <p className="text-2xl font-semibold text-black">
                 ${watch.price || 299}
               </p>
-              <Button className="w-full bg-black text-white hover:bg-gray-900 rounded-lg h-12 text-sm font-medium transition-colors">
+              <Button className="w-full cursor-pointer bg-black text-white hover:bg-gray-900 rounded-lg h-12 text-sm font-medium transition-colors">
                 Buy Now
               </Button>
             </div>

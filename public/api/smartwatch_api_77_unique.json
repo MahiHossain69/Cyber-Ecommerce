@@ -1,0 +1,1146 @@
+{
+  "success": true,
+  "total": 77,
+  "products": [
+    {
+      "id": 1,
+      "brand": "Apple",
+      "title": "Apple Watch Series 9",
+      "battery": "559mAh",
+      "star": 4.2,
+      "reviews": 1235,
+      "description": "Apple Watch Series 9 smartwatch with fitness tracking, heart rate monitoring, GPS and AMOLED display.",
+      "reviewComments": [
+        "Premium build quality.",
+        "Comfortable for daily wear.",
+        "Accurate fitness tracking."
+      ],
+      "image": "/product/apple series 9.jpeg"
+    },
+    {
+      "id": 2,
+      "brand": "Apple",
+      "title": "Apple Watch Ultra 2",
+      "battery": "528mAh",
+      "star": 4.6,
+      "reviews": 649,
+      "description": "Apple Watch Ultra 2 smartwatch with fitness tracking, heart rate monitoring, GPS and AMOLED display.",
+      "reviewComments": [
+        "Premium build quality.",
+        "Accurate fitness tracking.",
+        "Battery life is excellent."
+      ],
+      "image": "/product/apple ultra 2.jpeg"
+    },
+    {
+      "id": 3,
+      "brand": "Apple",
+      "title": "Apple Watch Series 8",
+      "battery": "549mAh",
+      "star": 4.3,
+      "reviews": 316,
+      "description": "Apple Watch Series 8 smartwatch with fitness tracking, heart rate monitoring, GPS and AMOLED display.",
+      "reviewComments": [
+        "Accurate fitness tracking.",
+        "Display is bright and sharp.",
+        "Comfortable for daily wear."
+      ],
+      "image": "/product/apple series 8.webp"
+    },
+    {
+      "id": 4,
+      "brand": "Apple",
+      "title": "Apple Watch SE (2022)",
+      "battery": "574mAh",
+      "star": 4.6,
+      "reviews": 3460,
+      "description": "Apple Watch SE (2022) smartwatch with fitness tracking, heart rate monitoring, GPS and AMOLED display.",
+      "reviewComments": [
+        "Battery life is excellent.",
+        "Comfortable for daily wear.",
+        "Premium build quality."
+      ],
+      "image": "/product/apple se 2022.jpeg"
+    },
+    {
+      "id": 5,
+      "brand": "Samsung",
+      "title": "Galaxy Watch 6",
+      "battery": "450mAh",
+      "star": 4.6,
+      "reviews": 761,
+      "description": "Galaxy Watch 6 smartwatch with fitness tracking, heart rate monitoring, GPS and AMOLED display.",
+      "reviewComments": [
+        "Battery life is excellent.",
+        "Accurate fitness tracking.",
+        "Premium build quality."
+      ],
+      "image": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-watch6.jpg"
+    },
+    {
+      "id": 6,
+      "brand": "Samsung",
+      "title": "Galaxy Watch 6 Classic",
+      "battery": "588mAh",
+      "star": 4.8,
+      "reviews": 548,
+      "description": "Galaxy Watch 6 Classic smartwatch with fitness tracking, heart rate monitoring, GPS and AMOLED display.",
+      "reviewComments": [
+        "Battery life is excellent.",
+        "Comfortable for daily wear.",
+        "Display is bright and sharp."
+      ],
+      "image": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-watch6-classic.jpg"
+    },
+    {
+      "id": 7,
+      "brand": "Samsung",
+      "title": "Galaxy Watch 5",
+      "battery": "452mAh",
+      "star": 4.9,
+      "reviews": 1754,
+      "description": "Galaxy Watch 5 smartwatch with fitness tracking, heart rate monitoring, GPS and AMOLED display.",
+      "reviewComments": [
+        "Premium build quality.",
+        "Battery life is excellent.",
+        "Accurate fitness tracking."
+      ],
+      "image": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-watch5.jpg"
+    },
+    {
+      "id": 8,
+      "brand": "Samsung",
+      "title": "Galaxy Watch 5 Pro",
+      "battery": "507mAh",
+      "star": 4.7,
+      "reviews": 809,
+      "description": "Galaxy Watch 5 Pro smartwatch with fitness tracking, heart rate monitoring, GPS and AMOLED display.",
+      "reviewComments": [
+        "Battery life is excellent.",
+        "Comfortable for daily wear.",
+        "Premium build quality."
+      ],
+      "image": "/product/galaxy watch 5 pro.webp"
+    },
+    {
+      "id": 9,
+      "brand": "Samsung",
+      "title": "Galaxy Watch 4",
+      "battery": "595mAh",
+      "star": 4.4,
+      "reviews": 2123,
+      "description": "Galaxy Watch 4 smartwatch with fitness tracking, heart rate monitoring, GPS and AMOLED display.",
+      "reviewComments": [
+        "Display is bright and sharp.",
+        "Premium build quality.",
+        "Battery life is excellent."
+      ],
+      "image": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-watch4.jpg"
+    },
+    {
+      "id": 10,
+      "brand": "Samsung",
+      "title": "Galaxy Watch 4 Classic",
+      "battery": "563mAh",
+      "star": 4.7,
+      "reviews": 1798,
+      "description": "Galaxy Watch 4 Classic smartwatch with fitness tracking, heart rate monitoring, GPS and AMOLED display.",
+      "reviewComments": [
+        "Battery life is excellent.",
+        "Premium build quality.",
+        "Display is bright and sharp."
+      ],
+      "image": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-watch4-classic.jpg"
+    },
+    {
+      "id": 11,
+      "brand": "Xiaomi",
+      "title": "Xiaomi Watch S1",
+      "battery": "326mAh",
+      "star": 4.8,
+      "reviews": 3696,
+      "description": "Xiaomi Watch S1 smartwatch with fitness tracking, heart rate monitoring, GPS and AMOLED display.",
+      "reviewComments": [
+        "Comfortable for daily wear.",
+        "Battery life is excellent.",
+        "Accurate fitness tracking."
+      ],
+      "image": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-watch-s1.jpg"
+    },
+    {
+      "id": 12,
+      "brand": "Xiaomi",
+      "title": "Xiaomi Watch S1 Pro",
+      "battery": "356mAh",
+      "star": 4.3,
+      "reviews": 2996,
+      "description": "Xiaomi Watch S1 Pro smartwatch with fitness tracking, heart rate monitoring, GPS and AMOLED display.",
+      "reviewComments": [
+        "Premium build quality.",
+        "Display is bright and sharp.",
+        "Accurate fitness tracking."
+      ],
+      "image": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-watch-s1-pro.jpg"
+    },
+    {
+      "id": 13,
+      "brand": "Xiaomi",
+      "title": "Redmi Watch 3",
+      "battery": "224mAh",
+      "star": 4.7,
+      "reviews": 633,
+      "description": "Redmi Watch 3 smartwatch with fitness tracking, heart rate monitoring, GPS and AMOLED display.",
+      "reviewComments": [
+        "Display is bright and sharp.",
+        "Battery life is excellent.",
+        "Premium build quality."
+      ],
+      "image": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-watch3.jpg"
+    },
+    {
+      "id": 14,
+      "brand": "Xiaomi",
+      "title": "Redmi Watch 4",
+      "battery": "345mAh",
+      "star": 4.2,
+      "reviews": 942,
+      "description": "Redmi Watch 4 smartwatch with fitness tracking, heart rate monitoring, GPS and AMOLED display.",
+      "reviewComments": [
+        "Accurate fitness tracking.",
+        "Display is bright and sharp.",
+        "Premium build quality."
+      ],
+      "image": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-watch4.jpg"
+    },
+    {
+      "id": 15,
+      "brand": "Huawei",
+      "title": "Huawei Watch GT 4",
+      "battery": "392mAh",
+      "star": 4.7,
+      "reviews": 2076,
+      "description": "Huawei Watch GT 4 smartwatch with fitness tracking, heart rate monitoring, GPS and AMOLED display.",
+      "reviewComments": [
+        "Premium build quality.",
+        "Accurate fitness tracking.",
+        "Display is bright and sharp."
+      ],
+      "image": "https://fdn2.gsmarena.com/vv/bigpic/huawei-watch-gt4.jpg"
+    },
+    {
+      "id": 16,
+      "brand": "Huawei",
+      "title": "Huawei Watch GT 3",
+      "battery": "294mAh",
+      "star": 4.6,
+      "reviews": 3186,
+      "description": "Huawei Watch GT 3 smartwatch with fitness tracking, heart rate monitoring, GPS and AMOLED display.",
+      "reviewComments": [
+        "Premium build quality.",
+        "Comfortable for daily wear.",
+        "Accurate fitness tracking."
+      ],
+      "image": "https://fdn2.gsmarena.com/vv/bigpic/huawei-watch-gt3.jpg"
+    },
+    {
+      "id": 17,
+      "brand": "Huawei",
+      "title": "Huawei Watch Fit 2",
+      "battery": "262mAh",
+      "star": 4.2,
+      "reviews": 1186,
+      "description": "Huawei Watch Fit 2 smartwatch with fitness tracking, heart rate monitoring, GPS and AMOLED display.",
+      "reviewComments": [
+        "Comfortable for daily wear.",
+        "Accurate fitness tracking.",
+        "Display is bright and sharp."
+      ],
+      "image": "/product/huawei fit2.jpg"
+    },
+    {
+      "id": 18,
+      "brand": "Huawei",
+      "title": "Huawei Watch Ultimate",
+      "battery": "360mAh",
+      "star": 5.0,
+      "reviews": 2051,
+      "description": "Huawei Watch Ultimate smartwatch with fitness tracking, heart rate monitoring, GPS and AMOLED display.",
+      "reviewComments": [
+        "Premium build quality.",
+        "Comfortable for daily wear.",
+        "Display is bright and sharp."
+      ],
+      "image": "/product/huawei ultimate.jpeg"
+    },
+    {
+      "id": 19,
+      "brand": "Honor",
+      "title": "Honor Watch GS 3",
+      "battery": "369mAh",
+      "star": 4.9,
+      "reviews": 1420,
+      "description": "Honor Watch GS 3 smartwatch with fitness tracking, heart rate monitoring, GPS and AMOLED display.",
+      "reviewComments": [
+        "Display is bright and sharp.",
+        "Battery life is excellent.",
+        "Premium build quality."
+      ],
+      "image": "https://fdn2.gsmarena.com/vv/bigpic/honor-watch-gs3.jpg"
+    },
+    {
+      "id": 20,
+      "brand": "Honor",
+      "title": "Honor Watch 4",
+      "battery": "332mAh",
+      "star": 4.3,
+      "reviews": 1143,
+      "description": "Honor Watch 4 smartwatch with fitness tracking, heart rate monitoring, GPS and AMOLED display.",
+      "reviewComments": [
+        "Premium build quality.",
+        "Accurate fitness tracking.",
+        "Comfortable for daily wear."
+      ],
+      "image": "https://fdn2.gsmarena.com/vv/bigpic/honor-watch4.jpg"
+    },
+    {
+      "id": 21,
+      "brand": "Honor",
+      "title": "Honor Magic Watch 2",
+      "battery": "328mAh",
+      "star": 4.2,
+      "reviews": 552,
+      "description": "Honor Magic Watch 2 smartwatch with fitness tracking, heart rate monitoring, GPS and AMOLED display.",
+      "reviewComments": [
+        "Comfortable for daily wear.",
+        "Accurate fitness tracking.",
+        "Display is bright and sharp."
+      ],
+      "image": "/product/honor magic2.jpg"
+    },
+    {
+      "id": 22,
+      "brand": "Amazfit",
+      "title": "Amazfit GTR 4",
+      "battery": "577mAh",
+      "star": 4.8,
+      "reviews": 703,
+      "description": "Amazfit GTR 4 smartwatch with fitness tracking, heart rate monitoring, GPS and AMOLED display.",
+      "reviewComments": [
+        "Display is bright and sharp.",
+        "Battery life is excellent.",
+        "Comfortable for daily wear."
+      ],
+      "image": "/product/amazfit gtr4.webp"
+    },
+    {
+      "id": 23,
+      "brand": "Amazfit",
+      "title": "Amazfit GTS 4",
+      "battery": "443mAh",
+      "star": 4.2,
+      "reviews": 636,
+      "description": "Amazfit GTS 4 smartwatch with fitness tracking, heart rate monitoring, GPS and AMOLED display.",
+      "reviewComments": [
+        "Comfortable for daily wear.",
+        "Display is bright and sharp.",
+        "Premium build quality."
+      ],
+      "image": "/product/amazfit gts4.jpg"
+    },
+    {
+      "id": 24,
+      "brand": "Amazfit",
+      "title": "Amazfit T-Rex 2",
+      "battery": "382mAh",
+      "star": 4.7,
+      "reviews": 1337,
+      "description": "Amazfit T-Rex 2 smartwatch with fitness tracking, heart rate monitoring, GPS and AMOLED display.",
+      "reviewComments": [
+        "Battery life is excellent.",
+        "Premium build quality.",
+        "Accurate fitness tracking."
+      ],
+      "image": "/product/amazfit trex2.webp"
+    },
+    {
+      "id": 25,
+      "brand": "Amazfit",
+      "title": "Amazfit Bip 5",
+      "battery": "479mAh",
+      "star": 4.3,
+      "reviews": 3814,
+      "description": "Amazfit Bip 5 smartwatch with fitness tracking, heart rate monitoring, GPS and AMOLED display.",
+      "reviewComments": [
+        "Comfortable for daily wear.",
+        "Display is bright and sharp.",
+        "Accurate fitness tracking."
+      ],
+      "image": "/product/amazfit bip5.jpeg"
+    },
+    {
+      "id": 26,
+      "brand": "Garmin",
+      "title": "Garmin Venu 2",
+      "battery": "276mAh",
+      "star": 4.6,
+      "reviews": 2265,
+      "description": "Garmin Venu 2 smartwatch with fitness tracking, heart rate monitoring, GPS and AMOLED display.",
+      "reviewComments": [
+        "Display is bright and sharp.",
+        "Comfortable for daily wear.",
+        "Battery life is excellent."
+      ],
+      "image": "/product/garmin venu2.webp"
+    },
+    {
+      "id": 27,
+      "brand": "Garmin",
+      "title": "Garmin Venu Sq 2",
+      "battery": "518mAh",
+      "star": 4.2,
+      "reviews": 801,
+      "description": "Garmin Venu Sq 2 smartwatch with fitness tracking, heart rate monitoring, GPS and AMOLED display.",
+      "reviewComments": [
+        "Comfortable for daily wear.",
+        "Display is bright and sharp.",
+        "Accurate fitness tracking."
+      ],
+      "image": "/product/garmin venu sq2.webp"
+    },
+    {
+      "id": 28,
+      "brand": "Garmin",
+      "title": "Garmin Fenix 7",
+      "battery": "409mAh",
+      "star": 4.8,
+      "reviews": 235,
+      "description": "Garmin Fenix 7 smartwatch with fitness tracking, heart rate monitoring, GPS and AMOLED display.",
+      "reviewComments": [
+        "Display is bright and sharp.",
+        "Comfortable for daily wear.",
+        "Battery life is excellent."
+      ],
+      "image": "/product/garmin fenix7.avif"
+    },
+    {
+      "id": 29,
+      "brand": "Garmin",
+      "title": "Garmin Forerunner 965",
+      "battery": "522mAh",
+      "star": 4.8,
+      "reviews": 1799,
+      "description": "Garmin Forerunner 965 smartwatch with fitness tracking, heart rate monitoring, GPS and AMOLED display.",
+      "reviewComments": [
+        "Comfortable for daily wear.",
+        "Display is bright and sharp.",
+        "Accurate fitness tracking."
+      ],
+      "image": "/product/garmin forerunner 965.jpeg"
+    },
+    {
+      "id": 30,
+      "brand": "Garmin",
+      "title": "Garmin Epix Gen 2",
+      "battery": "340mAh",
+      "star": 4.8,
+      "reviews": 3511,
+      "description": "Garmin Epix Gen 2 smartwatch with fitness tracking, heart rate monitoring, GPS and AMOLED display.",
+      "reviewComments": [
+        "Display is bright and sharp.",
+        "Premium build quality.",
+        "Battery life is excellent."
+      ],
+      "image": "/product/garmin epix gen2.jpeg"
+    },
+    {
+      "id": 31,
+      "brand": "Fitbit",
+      "title": "Fitbit Sense 2",
+      "battery": "575mAh",
+      "star": 4.8,
+      "reviews": 3559,
+      "description": "Fitbit Sense 2 smartwatch with fitness tracking, heart rate monitoring, GPS and AMOLED display.",
+      "reviewComments": [
+        "Comfortable for daily wear.",
+        "Accurate fitness tracking.",
+        "Premium build quality."
+      ],
+      "image": "/product/fitbit sense2.jpg"
+    },
+    {
+      "id": 32,
+      "brand": "Fitbit",
+      "title": "Fitbit Versa 4",
+      "battery": "431mAh",
+      "star": 4.9,
+      "reviews": 2465,
+      "description": "Fitbit Versa 4 smartwatch with fitness tracking, heart rate monitoring, GPS and AMOLED display.",
+      "reviewComments": [
+        "Display is bright and sharp.",
+        "Comfortable for daily wear.",
+        "Accurate fitness tracking."
+      ],
+      "image": "/product/fitbit versa4.jpeg"
+    },
+    {
+      "id": 33,
+      "brand": "Fitbit",
+      "title": "Fitbit Charge 6",
+      "battery": "364mAh",
+      "star": 4.0,
+      "reviews": 2819,
+      "description": "Fitbit Charge 6 smartwatch with fitness tracking, heart rate monitoring, GPS and AMOLED display.",
+      "reviewComments": [
+        "Accurate fitness tracking.",
+        "Battery life is excellent.",
+        "Comfortable for daily wear."
+      ],
+      "image": "https://fdn2.gsmarena.com/vv/bigpic/fitbit-charge-6.jpg"
+    },
+    {
+      "id": 34,
+      "brand": "Fitbit",
+      "title": "Fitbit Inspire 3",
+      "battery": "556mAh",
+      "star": 4.7,
+      "reviews": 997,
+      "description": "Fitbit Inspire 3 smartwatch with fitness tracking, heart rate monitoring, GPS and AMOLED display.",
+      "reviewComments": [
+        "Premium build quality.",
+        "Display is bright and sharp.",
+        "Battery life is excellent."
+      ],
+      "image": "/product/fitbit inspire3.jpg"
+    },
+    {
+      "id": 35,
+      "brand": "Realme",
+      "title": "Realme Watch 3 Pro",
+      "battery": "596mAh",
+      "star": 4.8,
+      "reviews": 958,
+      "description": "Realme Watch 3 Pro smartwatch with fitness tracking, heart rate monitoring, GPS and AMOLED display.",
+      "reviewComments": [
+        "Comfortable for daily wear.",
+        "Battery life is excellent.",
+        "Premium build quality."
+      ],
+      "image": "/product/realme watch 3 pro.webp"
+    },
+    {
+      "id": 36,
+      "brand": "Realme",
+      "title": "Realme Watch S",
+      "battery": "439mAh",
+      "star": 4.4,
+      "reviews": 3997,
+      "description": "Realme Watch S smartwatch with fitness tracking, heart rate monitoring, GPS and AMOLED display.",
+      "reviewComments": [
+        "Battery life is excellent.",
+        "Comfortable for daily wear.",
+        "Accurate fitness tracking."
+      ],
+      "image": "https://fdn2.gsmarena.com/vv/bigpic/realme-watch-s.jpg"
+    },
+    {
+      "id": 37,
+      "brand": "Realme",
+      "title": "Realme Watch T1",
+      "battery": "295mAh",
+      "star": 5.0,
+      "reviews": 553,
+      "description": "Realme Watch T1 smartwatch with fitness tracking, heart rate monitoring, GPS and AMOLED display.",
+      "reviewComments": [
+        "Comfortable for daily wear.",
+        "Premium build quality.",
+        "Display is bright and sharp."
+      ],
+      "image": "https://fdn2.gsmarena.com/vv/bigpic/realme-watch-t1.jpg"
+    },
+    {
+      "id": 38,
+      "brand": "Oppo",
+      "title": "Oppo Watch 3",
+      "battery": "466mAh",
+      "star": 4.4,
+      "reviews": 2755,
+      "description": "Oppo Watch 3 smartwatch with fitness tracking, heart rate monitoring, GPS and AMOLED display.",
+      "reviewComments": [
+        "Accurate fitness tracking.",
+        "Display is bright and sharp.",
+        "Battery life is excellent."
+      ],
+      "image": "/product/oppo watch 3.jpg"
+    },
+    {
+      "id": 39,
+      "brand": "Oppo",
+      "title": "Oppo Watch 3 Pro",
+      "battery": "323mAh",
+      "star": 4.7,
+      "reviews": 3221,
+      "description": "Oppo Watch 3 Pro smartwatch with fitness tracking, heart rate monitoring, GPS and AMOLED display.",
+      "reviewComments": [
+        "Display is bright and sharp.",
+        "Accurate fitness tracking.",
+        "Premium build quality."
+      ],
+      "image": "/product/oppo watch 3 pro.jpg"
+    },
+    {
+      "id": 40,
+      "brand": "Oppo",
+      "title": "Oppo Watch Free",
+      "battery": "543mAh",
+      "star": 4.7,
+      "reviews": 1114,
+      "description": "Oppo Watch Free smartwatch with fitness tracking, heart rate monitoring, GPS and AMOLED display.",
+      "reviewComments": [
+        "Comfortable for daily wear.",
+        "Battery life is excellent.",
+        "Accurate fitness tracking."
+      ],
+      "image": "/product/oppo watch free.jpeg"
+    },
+    {
+      "id": 41,
+      "brand": "OnePlus",
+      "title": "OnePlus Watch 2",
+      "battery": "361mAh",
+      "star": 4.5,
+      "reviews": 481,
+      "description": "OnePlus Watch 2 smartwatch with fitness tracking, heart rate monitoring, GPS and AMOLED display.",
+      "reviewComments": [
+        "Battery life is excellent.",
+        "Comfortable for daily wear.",
+        "Premium build quality."
+      ],
+      "image": "https://fdn2.gsmarena.com/vv/bigpic/oneplus-watch-2.jpg"
+    },
+    {
+      "id": 42,
+      "brand": "OnePlus",
+      "title": "OnePlus Watch",
+      "battery": "509mAh",
+      "star": 4.5,
+      "reviews": 2421,
+      "description": "OnePlus Watch smartwatch with fitness tracking, heart rate monitoring, GPS and AMOLED display.",
+      "reviewComments": [
+        "Display is bright and sharp.",
+        "Accurate fitness tracking.",
+        "Comfortable for daily wear."
+      ],
+      "image": "https://fdn2.gsmarena.com/vv/bigpic/oneplus-watch.jpg"
+    },
+    {
+      "id": 43,
+      "brand": "Mobvoi",
+      "title": "TicWatch Pro 5",
+      "battery": "309mAh",
+      "star": 4.7,
+      "reviews": 2149,
+      "description": "TicWatch Pro 5 smartwatch with fitness tracking, heart rate monitoring, GPS and AMOLED display.",
+      "reviewComments": [
+        "Accurate fitness tracking.",
+        "Battery life is excellent.",
+        "Display is bright and sharp."
+      ],
+      "image": "/product/ticwatch pro5.jpeg"
+    },
+    {
+      "id": 44,
+      "brand": "Mobvoi",
+      "title": "TicWatch E3",
+      "battery": "447mAh",
+      "star": 4.4,
+      "reviews": 1095,
+      "description": "TicWatch E3 smartwatch with fitness tracking, heart rate monitoring, GPS and AMOLED display.",
+      "reviewComments": [
+        "Accurate fitness tracking.",
+        "Display is bright and sharp.",
+        "Premium build quality."
+      ],
+      "image": "/product/ticwatch e3.jpeg"
+    },
+    {
+      "id": 45,
+      "brand": "Mobvoi",
+      "title": "TicWatch GTH",
+      "battery": "357mAh",
+      "star": 4.9,
+      "reviews": 1621,
+      "description": "TicWatch GTH smartwatch with fitness tracking, heart rate monitoring, GPS and AMOLED display.",
+      "reviewComments": [
+        "Premium build quality.",
+        "Display is bright and sharp.",
+        "Accurate fitness tracking."
+      ],
+      "image": "/product/ticwatch gth.jpg"
+    },
+    {
+      "id": 46,
+      "brand": "Fossil",
+      "title": "Fossil Gen 6",
+      "battery": "449mAh",
+      "star": 4.3,
+      "reviews": 785,
+      "description": "Fossil Gen 6 smartwatch with fitness tracking, heart rate monitoring, GPS and AMOLED display.",
+      "reviewComments": [
+        "Battery life is excellent.",
+        "Accurate fitness tracking.",
+        "Premium build quality."
+      ],
+      "image": "/product/fossil gen6.jpg"
+    },
+    {
+      "id": 47,
+      "brand": "Fossil",
+      "title": "Fossil Sport",
+      "battery": "230mAh",
+      "star": 4.0,
+      "reviews": 1166,
+      "description": "Fossil Sport smartwatch with fitness tracking, heart rate monitoring, GPS and AMOLED display.",
+      "reviewComments": [
+        "Premium build quality.",
+        "Accurate fitness tracking.",
+        "Battery life is excellent."
+      ],
+      "image": "/product/fossil sport.webp"
+    },
+    {
+      "id": 48,
+      "brand": "Fossil",
+      "title": "Fossil Hybrid HR",
+      "battery": "265mAh",
+      "star": 4.3,
+      "reviews": 3254,
+      "description": "Fossil Hybrid HR smartwatch with fitness tracking, heart rate monitoring, GPS and AMOLED display.",
+      "reviewComments": [
+        "Battery life is excellent.",
+        "Comfortable for daily wear.",
+        "Display is bright and sharp."
+      ],
+      "image": "/product/fossil hybrid hr.jpg"
+    },
+    {
+      "id": 49,
+      "brand": "Suunto",
+      "title": "Suunto 9 Peak",
+      "battery": "542mAh",
+      "star": 4.2,
+      "reviews": 3457,
+      "description": "Suunto 9 Peak smartwatch with fitness tracking, heart rate monitoring, GPS and AMOLED display.",
+      "reviewComments": [
+        "Display is bright and sharp.",
+        "Premium build quality.",
+        "Accurate fitness tracking."
+      ],
+      "image": "/product/suunto 9 peak.jpeg"
+    },
+    {
+      "id": 50,
+      "brand": "Suunto",
+      "title": "Suunto 5 Peak",
+      "battery": "531mAh",
+      "star": 4.1,
+      "reviews": 1459,
+      "description": "Suunto 5 Peak smartwatch with fitness tracking, heart rate monitoring, GPS and AMOLED display.",
+      "reviewComments": [
+        "Accurate fitness tracking.",
+        "Premium build quality.",
+        "Display is bright and sharp."
+      ],
+      "image": "/product/suunto 5 peak.webp"
+    },
+    {
+      "id": 51,
+      "brand": "Polar",
+      "title": "Polar Vantage V2",
+      "battery": "346mAh",
+      "star": 4.8,
+      "reviews": 1791,
+      "description": "Polar Vantage V2 smartwatch with fitness tracking, heart rate monitoring, GPS and AMOLED display.",
+      "reviewComments": [
+        "Premium build quality.",
+        "Display is bright and sharp.",
+        "Battery life is excellent."
+      ],
+      "image": "/product/polar vantage v2.webp"
+    },
+    {
+      "id": 52,
+      "brand": "Polar",
+      "title": "Polar Ignite 3",
+      "battery": "370mAh",
+      "star": 4.4,
+      "reviews": 3556,
+      "description": "Polar Ignite 3 smartwatch with fitness tracking, heart rate monitoring, GPS and AMOLED display.",
+      "reviewComments": [
+        "Comfortable for daily wear.",
+        "Display is bright and sharp.",
+        "Battery life is excellent."
+      ],
+      "image": "/product/polar ignite3.jpeg"
+    },
+    {
+      "id": 53,
+      "brand": "Casio",
+      "title": "Casio G-Shock GSW-H1000",
+      "battery": "538mAh",
+      "star": 4.6,
+      "reviews": 914,
+      "description": "Casio G-Shock GSW-H1000 smartwatch with fitness tracking, heart rate monitoring, GPS and AMOLED display.",
+      "reviewComments": [
+        "Premium build quality.",
+        "Display is bright and sharp.",
+        "Comfortable for daily wear."
+      ],
+      "image": "/product/casio g-shock gsw-h1000.jpeg"
+    },
+    {
+      "id": 54,
+      "brand": "Casio",
+      "title": "Casio Pro Trek WSD-F30",
+      "battery": "450mAh",
+      "star": 4.7,
+      "reviews": 3368,
+      "description": "Casio Pro Trek WSD-F30 smartwatch with fitness tracking, heart rate monitoring, GPS and AMOLED display.",
+      "reviewComments": [
+        "Accurate fitness tracking.",
+        "Battery life is excellent.",
+        "Display is bright and sharp."
+      ],
+      "image": "/product/casio pro trek wsd-f30.jpeg"
+    },
+    {
+      "id": 55,
+      "brand": "Withings",
+      "title": "Withings ScanWatch",
+      "battery": "472mAh",
+      "star": 4.5,
+      "reviews": 3292,
+      "description": "Withings ScanWatch smartwatch with fitness tracking, heart rate monitoring, GPS and AMOLED display.",
+      "reviewComments": [
+        "Display is bright and sharp.",
+        "Battery life is excellent.",
+        "Accurate fitness tracking."
+      ],
+      "image": "/product/withings scanwatch.jpg"
+    },
+    {
+      "id": 56,
+      "brand": "Withings",
+      "title": "Withings Steel HR",
+      "battery": "356mAh",
+      "star": 4.2,
+      "reviews": 2607,
+      "description": "Withings Steel HR smartwatch with fitness tracking, heart rate monitoring, GPS and AMOLED display.",
+      "reviewComments": [
+        "Accurate fitness tracking.",
+        "Comfortable for daily wear.",
+        "Display is bright and sharp."
+      ],
+      "image": "/product/withings steel hr.jpeg"
+    },
+    {
+      "id": 57,
+      "brand": "Noise",
+      "title": "Noise ColorFit Pro 4",
+      "battery": "547mAh",
+      "star": 4.9,
+      "reviews": 740,
+      "description": "Noise ColorFit Pro 4 smartwatch with fitness tracking, heart rate monitoring, GPS and AMOLED display.",
+      "reviewComments": [
+        "Premium build quality.",
+        "Accurate fitness tracking.",
+        "Comfortable for daily wear."
+      ],
+      "image": "/product/noise colorfit pro4.jpeg"
+    },
+    {
+      "id": 58,
+      "brand": "Boat",
+      "title": "Boat Xtend",
+      "battery": "350mAh",
+      "star": 4.3,
+      "reviews": 1387,
+      "description": "Boat Xtend smartwatch with fitness tracking, heart rate monitoring, GPS and AMOLED display.",
+      "reviewComments": [
+        "Display is bright and sharp.",
+        "Accurate fitness tracking.",
+        "Comfortable for daily wear."
+      ],
+      "image": "/product/boat.jpeg"
+    },
+    {
+      "id": 59,
+      "brand": "Fire-Boltt",
+      "title": "Fire-Boltt Invincible",
+      "battery": "375mAh",
+      "star": 4.3,
+      "reviews": 2475,
+      "description": "Fire-Boltt Invincible smartwatch with fitness tracking, heart rate monitoring, GPS and AMOLED display.",
+      "reviewComments": [
+        "Accurate fitness tracking.",
+        "Premium build quality.",
+        "Comfortable for daily wear."
+      ],
+      "image": "/product/fire boltt.jpeg"
+    },
+    {
+      "id": 60,
+      "brand": "Zeblaze",
+      "title": "Zeblaze Stratos 2",
+      "battery": "447mAh",
+      "star": 4.2,
+      "reviews": 1330,
+      "description": "Zeblaze Stratos 2 smartwatch with fitness tracking, heart rate monitoring, GPS and AMOLED display.",
+      "reviewComments": [
+        "Premium build quality.",
+        "Comfortable for daily wear.",
+        "Display is bright and sharp."
+      ],
+      "image": "/product/zeblaze stratos 2.jpeg"
+    },
+    {
+      "id": 61,
+      "brand": "Haylou",
+      "title": "Haylou RS4",
+      "battery": "219mAh",
+      "star": 4.2,
+      "reviews": 2843,
+      "description": "Haylou RS4 smartwatch with fitness tracking, heart rate monitoring, GPS and AMOLED display.",
+      "reviewComments": [
+        "Display is bright and sharp.",
+        "Comfortable for daily wear.",
+        "Premium build quality."
+      ],
+      "image": "/product/haylou rs4.jpg"
+    },
+    {
+      "id": 62,
+      "brand": "Imilab",
+      "title": "Imilab KW66",
+      "battery": "392mAh",
+      "star": 4.8,
+      "reviews": 1395,
+      "description": "Imilab KW66 smartwatch with fitness tracking, heart rate monitoring, GPS and AMOLED display.",
+      "reviewComments": [
+        "Comfortable for daily wear.",
+        "Accurate fitness tracking.",
+        "Display is bright and sharp."
+      ],
+      "image": "/product/imilab kw66.jpeg"
+    },
+    {
+      "id": 63,
+      "brand": "Colmi",
+      "title": "Colmi P28 Plus",
+      "battery": "448mAh",
+      "star": 4.7,
+      "reviews": 2650,
+      "description": "Colmi P28 Plus smartwatch with fitness tracking, heart rate monitoring, GPS and AMOLED display.",
+      "reviewComments": [
+        "Premium build quality.",
+        "Comfortable for daily wear.",
+        "Battery life is excellent."
+      ],
+      "image": "/product/colmi p28 plus.jpeg"
+    },
+    {
+      "id": 64,
+      "brand": "Kieslect",
+      "title": "Kieslect KS Pro",
+      "battery": "437mAh",
+      "star": 4.3,
+      "reviews": 497,
+      "description": "Kieslect KS Pro smartwatch with fitness tracking, heart rate monitoring, GPS and AMOLED display.",
+      "reviewComments": [
+        "Battery life is excellent.",
+        "Accurate fitness tracking.",
+        "Comfortable for daily wear."
+      ],
+      "image": "/product/kieslect ks pro.jpeg"
+    },
+    {
+      "id": 65,
+      "brand": "Lemfo",
+      "title": "Lemfo LEM12",
+      "battery": "319mAh",
+      "star": 4.7,
+      "reviews": 2664,
+      "description": "Lemfo LEM12 smartwatch with fitness tracking, heart rate monitoring, GPS and AMOLED display.",
+      "reviewComments": [
+        "Comfortable for daily wear.",
+        "Display is bright and sharp.",
+        "Battery life is excellent."
+      ],
+      "image": "/product/lemfo lem12.jpeg"
+    },
+    {
+      "id": 66,
+      "brand": "Kospet",
+      "title": "Kospet Tank M2",
+      "battery": "260mAh",
+      "star": 4.8,
+      "reviews": 2431,
+      "description": "Kospet Tank M2 smartwatch with fitness tracking, heart rate monitoring, GPS and AMOLED display.",
+      "reviewComments": [
+        "Comfortable for daily wear.",
+        "Premium build quality.",
+        "Battery life is excellent."
+      ],
+      "image": "/product/kospet tank m2.jpg"
+    },
+    {
+      "id": 67,
+      "brand": "DTNO",
+      "title": "DTNO 1",
+      "battery": "323mAh",
+      "star": 4.3,
+      "reviews": 3908,
+      "description": "DTNO 1 smartwatch with fitness tracking, heart rate monitoring, GPS and AMOLED display.",
+      "reviewComments": [
+        "Premium build quality.",
+        "Comfortable for daily wear.",
+        "Battery life is excellent."
+      ],
+      "image": "/product/dtno1.jpg"
+    },
+    {
+      "id": 68,
+      "brand": "Blaupunkt",
+      "title": "Blaupunkt Smartwatch",
+      "battery": "566mAh",
+      "star": 4.4,
+      "reviews": 1666,
+      "description": "Blaupunkt Smartwatch smartwatch with fitness tracking, heart rate monitoring, GPS and AMOLED display.",
+      "reviewComments": [
+        "Comfortable for daily wear.",
+        "Display is bright and sharp.",
+        "Battery life is excellent."
+      ],
+      "image": "/product/blaupunkt.jpeg"
+    },
+    {
+      "id": 69,
+      "brand": "Michael Kors",
+      "title": "Michael Kors Gen 6",
+      "battery": "539mAh",
+      "star": 4.2,
+      "reviews": 3553,
+      "description": "Michael Kors Gen 6 smartwatch with fitness tracking, heart rate monitoring, GPS and AMOLED display.",
+      "reviewComments": [
+        "Accurate fitness tracking.",
+        "Premium build quality.",
+        "Display is bright and sharp."
+      ],
+      "image": "/product/michael kors gen6.jpeg"
+    },
+    {
+      "id": 70,
+      "brand": "Skagen",
+      "title": "Skagen Falster Gen 6",
+      "battery": "386mAh",
+      "star": 4.2,
+      "reviews": 3549,
+      "description": "Skagen Falster Gen 6 smartwatch with fitness tracking, heart rate monitoring, GPS and AMOLED display.",
+      "reviewComments": [
+        "Premium build quality.",
+        "Accurate fitness tracking.",
+        "Display is bright and sharp."
+      ],
+      "image": "/product/skagen falster gen 6.webp"
+    },
+    {
+      "id": 71,
+      "brand": "Diesel",
+      "title": "Diesel Griffed Gen 6",
+      "battery": "345mAh",
+      "star": 4.9,
+      "reviews": 2823,
+      "description": "Diesel Griffed Gen 6 smartwatch with fitness tracking, heart rate monitoring, GPS and AMOLED display.",
+      "reviewComments": [
+        "Premium build quality.",
+        "Comfortable for daily wear.",
+        "Accurate fitness tracking."
+      ],
+      "image": "/product/diesel griffed gen6.jpg"
+    },
+    {
+      "id": 72,
+      "brand": "Tag Heuer",
+      "title": "Tag Heuer Connected",
+      "battery": "452mAh",
+      "star": 4.5,
+      "reviews": 550,
+      "description": "Tag Heuer Connected smartwatch with fitness tracking, heart rate monitoring, GPS and AMOLED display.",
+      "reviewComments": [
+        "Display is bright and sharp.",
+        "Comfortable for daily wear.",
+        "Battery life is excellent."
+      ],
+      "image": "/product/tag heuer.avif"
+    },
+    {
+      "id": 73,
+      "brand": "Montblanc",
+      "title": "Montblanc Summit 3",
+      "battery": "596mAh",
+      "star": 4.2,
+      "reviews": 270,
+      "description": "Montblanc Summit 3 smartwatch with fitness tracking, heart rate monitoring, GPS and AMOLED display.",
+      "reviewComments": [
+        "Battery life is excellent.",
+        "Comfortable for daily wear.",
+        "Premium build quality."
+      ],
+      "image": "/product/montblanc summit3.jpeg"
+    },
+    {
+      "id": 74,
+      "brand": "Hublot",
+      "title": "Hublot Big Bang e",
+      "battery": "407mAh",
+      "star": 4.4,
+      "reviews": 206,
+      "description": "Hublot Big Bang e smartwatch with fitness tracking, heart rate monitoring, GPS and AMOLED display.",
+      "reviewComments": [
+        "Battery life is excellent.",
+        "Display is bright and sharp.",
+        "Accurate fitness tracking."
+      ],
+      "image": "/product/hublot big bang e.jpeg"
+    },
+    {
+      "id": 75,
+      "brand": "Garmin",
+      "title": "Garmin Lily",
+      "battery": "364mAh",
+      "star": 4.1,
+      "reviews": 2517,
+      "description": "Garmin Lily smartwatch with fitness tracking, heart rate monitoring, GPS and AMOLED display.",
+      "reviewComments": [
+        "Premium build quality.",
+        "Battery life is excellent.",
+        "Display is bright and sharp."
+      ],
+      "image": "/product/Garmin Lily.webp"
+    },
+    {
+      "id": 76,
+      "brand": "Amazfit",
+      "title": "Amazfit Neo",
+      "battery": "512mAh",
+      "star": 4.2,
+      "reviews": 996,
+      "description": "Amazfit Neo smartwatch with fitness tracking, heart rate monitoring, GPS and AMOLED display.",
+      "reviewComments": [
+        "Premium build quality.",
+        "Display is bright and sharp.",
+        "Accurate fitness tracking."
+      ],
+      "image": "/product/amazfit neo.jpg"
+    }
+  ]
+}

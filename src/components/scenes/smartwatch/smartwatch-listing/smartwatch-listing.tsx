@@ -62,7 +62,7 @@ export function SmartwatchListing() {
   const [sortBy, setSortBy] = useState("rating");
 
   useEffect(() => {
-    fetch("/api/smartwatch_api_77_reviews.json")
+    fetch("/api/smartwatch_api_77_unique.json")
       .then((res) => res.json())
       .then((data: ApiResponse) => {
         if (data.success && data.products) {

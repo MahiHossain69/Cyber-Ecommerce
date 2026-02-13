@@ -70,7 +70,7 @@ export function Filters({
     <aside className="w-full lg:w-64 shrink-0">
       {/* Brand Filter */}
       <Collapsible open={brandOpen} onOpenChange={onBrandOpenChange}>
-        <CollapsibleTrigger className="flex items-center justify-between w-full py-4 border-b">
+        <CollapsibleTrigger className="flex cursor-pointer items-center justify-between w-full py-4 border-b">
           <span className="font-medium text-black">Brand</span>
           <ChevronDown
             className={cn(
@@ -123,7 +123,7 @@ export function Filters({
 
       {/* Battery Capacity Filter */}
       <Collapsible open={batteryOpen} onOpenChange={setBatteryOpen}>
-        <CollapsibleTrigger className="flex items-center justify-between w-full py-4 border-b">
+        <CollapsibleTrigger className="flex cursor-pointer items-center justify-between w-full py-4 border-b">
           <span className="font-medium text-black">Battery capacity</span>
           <ChevronDown
             className={cn(
@@ -151,7 +151,7 @@ export function Filters({
 
       {/* Display Type Filter */}
       <Collapsible open={displayOpen} onOpenChange={setDisplayOpen}>
-        <CollapsibleTrigger className="flex items-center justify-between w-full py-4 border-b">
+        <CollapsibleTrigger className="flex cursor-pointer items-center justify-between w-full py-4 border-b">
           <span className="font-medium text-black">Display type</span>
           <ChevronDown
             className={cn(
@@ -179,7 +179,7 @@ export function Filters({
 
       {/* Water Resistance Filter */}
       <Collapsible open={waterResistanceOpen} onOpenChange={setWaterResistanceOpen}>
-        <CollapsibleTrigger className="flex items-center justify-between w-full py-4 border-b">
+        <CollapsibleTrigger className="flex cursor-pointer items-center justify-between w-full py-4 border-b">
           <span className="font-medium text-black">Water resistance</span>
           <ChevronDown
             className={cn(
@@ -207,7 +207,7 @@ export function Filters({
 
       {/* Connectivity Filter */}
       <Collapsible open={connectivityOpen} onOpenChange={setConnectivityOpen}>
-        <CollapsibleTrigger className="flex items-center justify-between w-full py-4 border-b">
+        <CollapsibleTrigger className="flex cursor-pointer items-center justify-between w-full py-4 border-b">
           <span className="font-medium text-black">Connectivity</span>
           <ChevronDown
             className={cn(
