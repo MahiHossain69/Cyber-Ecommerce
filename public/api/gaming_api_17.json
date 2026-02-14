@@ -1,0 +1,189 @@
+[
+  {
+    "id": 1,
+    "name": "Sony PlayStation 5 Standard Edition",
+    "brand": "Sony",
+    "battery_mah": 0,
+    "star": 4.9,
+    "reviews": 5240,
+    "image": "https://m.media-amazon.com/images/I/619BkvKW35L._AC_SL1500_.jpg",
+    "description": "Next-gen gaming console with ultra-fast SSD and immersive 4K gaming.",
+    "reviewComments": ["Insane graphics quality.", "Super fast loading.", "Best console experience."]
+  },
+  {
+    "id": 2,
+    "name": "Microsoft Xbox Series X",
+    "brand": "Microsoft",
+    "battery_mah": 0,
+    "star": 4.8,
+    "reviews": 4102,
+    "image": "https://m.media-amazon.com/images/I/61JGKhqxHxL._AC_SL1500_.jpg",
+    "description": "Powerful gaming console delivering true 4K performance and smooth gameplay.",
+    "reviewComments": ["Very powerful hardware.", "Game Pass is amazing.", "Silent performance."]
+  },
+  {
+    "id": 3,
+    "name": "Nintendo Switch OLED",
+    "brand": "Nintendo",
+    "battery_mah": 4310,
+    "star": 4.8,
+    "reviews": 3870,
+    "image": "https://m.media-amazon.com/images/I/61-PblYntsL._AC_SL1500_.jpg",
+    "description": "Hybrid gaming console with vibrant OLED display for portable and TV gaming.",
+    "reviewComments": ["Perfect portable console.", "Amazing OLED screen.", "Fun multiplayer games."]
+  },
+  {
+    "id": 4,
+    "name": "Valve Steam Deck",
+    "brand": "Valve",
+    "battery_mah": 5313,
+    "star": 4.7,
+    "reviews": 2654,
+    "image": "/product/Valve Steam Deck.jpeg",
+    "description": "Portable PC gaming handheld capable of running full Steam library.",
+    "reviewComments": ["Great for PC gamers.", "Portable powerhouse.", "Runs most AAA games."]
+  },
+  {
+    "id": 5,
+    "name": "Sony DualSense Wireless Controller",
+    "brand": "Sony",
+    "battery_mah": 1560,
+    "star": 4.8,
+    "reviews": 3120,
+    "image": "/product/Sony DualSense Wireless Controller.jpg",
+    "description": "Advanced PS5 controller with haptic feedback and adaptive triggers.",
+    "reviewComments": ["Amazing vibration feedback.", "Comfortable grip.", "Premium quality."]
+  },
+  {
+    "id": 6,
+    "name": "Xbox Wireless Controller Series X",
+    "brand": "Microsoft",
+    "battery_mah": 1400,
+    "star": 4.7,
+    "reviews": 2840,
+    "image": "/product/Xbox Wireless Controller Series X.jpg",
+    "description": "Ergonomic controller with textured grip and seamless compatibility.",
+    "reviewComments": ["Very comfortable.", "Great for PC gaming.", "Excellent build."]
+  },
+  {
+    "id": 7,
+    "name": "Logitech G Pro X Superlight Mouse",
+    "brand": "Logitech",
+    "battery_mah": 500,
+    "star": 4.8,
+    "reviews": 2210,
+    "image": "https://m.media-amazon.com/images/I/61mpMH5TzkL._AC_SL1500_.jpg",
+    "description": "Ultra-lightweight esports gaming mouse with precise HERO sensor.",
+    "reviewComments": ["Extremely lightweight.", "Perfect for FPS.", "Super accurate tracking."]
+  },
+  {
+    "id": 8,
+    "name": "Razer BlackWidow V4 Pro Keyboard",
+    "brand": "Razer",
+    "battery_mah": 0,
+    "star": 4.6,
+    "reviews": 980,
+    "image": "/product/Razer BlackWidow V4 Pro Keyboard.webp",
+    "description": "Mechanical gaming keyboard with RGB lighting and macro controls.",
+    "reviewComments": ["Great RGB lighting.", "Smooth key press.", "Perfect for gamers."]
+  },
+  {
+    "id": 9,
+    "name": "SteelSeries Arctis Nova Pro Wireless",
+    "brand": "SteelSeries",
+    "battery_mah": 1000,
+    "star": 4.7,
+    "reviews": 860,
+    "image": "/product/SteelSeries Arctis Nova Pro Wireless.webp",
+    "description": "Premium wireless gaming headset with active noise cancellation.",
+    "reviewComments": ["Crystal clear audio.", "Very comfortable.", "Premium headset."]
+  },
+  {
+    "id": 10,
+    "name": "ASUS ROG Ally Handheld",
+    "brand": "ASUS",
+    "battery_mah": 4000,
+    "star": 4.6,
+    "reviews": 730,
+    "image": "/product/ASUS ROG Ally Handheld.webp",
+    "description": "Windows-based handheld gaming PC powered by AMD Ryzen Z1.",
+    "reviewComments": ["Strong performance.", "Portable gaming PC.", "Great screen quality."]
+  },
+  {
+    "id": 11,
+    "name": "Meta Quest 3 VR Headset",
+    "brand": "Meta",
+    "battery_mah": 4879,
+    "star": 4.7,
+    "reviews": 1500,
+    "image": "/product/Meta Quest 3 VR Headset.jpg",
+    "description": "Standalone VR headset with mixed reality features and immersive gameplay.",
+    "reviewComments": ["Amazing VR experience.", "Sharp visuals.", "Fun immersive games."]
+  },
+  {
+    "id": 12,
+    "name": "Thrustmaster T248 Racing Wheel",
+    "brand": "Thrustmaster",
+    "battery_mah": 0,
+    "star": 4.6,
+    "reviews": 520,
+    "image": "/product/Thrustmaster T248 Racing Wheel.webp",
+    "description": "Force feedback racing wheel for realistic driving simulation.",
+    "reviewComments": ["Feels realistic.", "Great build quality.", "Perfect for racing sims."]
+  },
+  {
+    "id": 13,
+    "name": "Elgato Stream Deck MK.2",
+    "brand": "Elgato",
+    "battery_mah": 0,
+    "star": 4.8,
+    "reviews": 1300,
+    "image": "/product/Elgato Stream Deck MK.2.jpeg",
+    "description": "Customizable control panel for streamers and content creators.",
+    "reviewComments": ["Great for streaming.", "Very customizable.", "Boosts productivity."]
+  },
+  {
+    "id": 14,
+    "name": "HyperX QuadCast S Gaming Microphone",
+    "brand": "HyperX",
+    "battery_mah": 0,
+    "star": 4.7,
+    "reviews": 2400,
+    "image": "/product/HyperX QuadCast S Gaming Microphone.jpeg",
+    "description": "RGB USB condenser microphone for gaming and streaming.",
+    "reviewComments": ["Clear voice recording.", "Beautiful RGB.", "Perfect for streamers."]
+  },
+  {
+    "id": 15,
+    "name": "Corsair K70 RGB Pro Keyboard",
+    "brand": "Corsair",
+    "battery_mah": 0,
+    "star": 4.6,
+    "reviews": 990,
+    "image": "/product/Corsair K70 RGB Pro Keyboard.webp",
+    "description": "Mechanical gaming keyboard with fast response switches.",
+    "reviewComments": ["Excellent typing feel.", "Strong build.", "Perfect gaming keyboard."]
+  },
+  {
+    "id": 16,
+    "name": "Glorious Model O Wireless Mouse",
+    "brand": "Glorious",
+    "battery_mah": 600,
+    "star": 4.5,
+    "reviews": 780,
+    "image": "/product/Glorious Model O Wireless Mouse.png",
+    "description": "Lightweight wireless gaming mouse with honeycomb design.",
+    "reviewComments": ["Very lightweight.", "Good battery life.", "Smooth performance."]
+  },
+  {
+    "id": 17,
+    "name": "Logitech G923 Racing Wheel",
+    "brand": "Logitech",
+    "battery_mah": 0,
+    "star": 4.7,
+    "reviews": 640,
+    "image": "/product/Logitech G923 Racing Wheel.webp",
+    "description": "TRUEFORCE feedback racing wheel for immersive simulation driving.",
+    "reviewComments": ["Strong force feedback.", "Feels real.", "Great build quality."]
+  }
+]
