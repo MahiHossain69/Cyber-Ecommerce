@@ -1,0 +1,167 @@
+[
+  {
+    "id": 1,
+    "title": "Apple MacBook Air M2",
+    "brand": "Apple",
+    "battery_mah": 5000,
+    "star": 4.8,
+    "reviews": 1245,
+    "image": "https://m.media-amazon.com/images/I/71f5Eu5lJSL._AC_SL1500_.jpg",
+    "description": "Ultra-thin laptop powered by Apple M2 chip with excellent battery life and Retina display.",
+    "reviewComments": ["Super fast and lightweight.", "Battery lasts all day.", "Perfect for developers."]
+  },
+  {
+    "id": 2,
+    "title": "Dell XPS 13 Plus",
+    "brand": "Dell",
+    "battery_mah": 4200,
+    "star": 4.6,
+    "reviews": 874,
+    "image": "/product/Dell XPS 13 Plus.jpg",
+    "description": "Premium ultrabook with InfinityEdge display and sleek aluminum design.",
+    "reviewComments": ["Amazing screen quality.", "Very compact.", "Great build quality."]
+  },
+  {
+    "id": 3,
+    "title": "HP Spectre x360 14",
+    "brand": "HP",
+    "battery_mah": 4500,
+    "star": 4.7,
+    "reviews": 653,
+    "image": "/product/HP Spectre x360 14.jpg",
+    "description": "Convertible 2-in-1 laptop with OLED display and strong performance.",
+    "reviewComments": ["Beautiful design.", "Touchscreen is smooth.", "Very versatile."]
+  },
+  {
+    "id": 4,
+    "title": "Lenovo ThinkPad X1 Carbon Gen 11",
+    "brand": "Lenovo",
+    "battery_mah": 4100,
+    "star": 4.7,
+    "reviews": 540,
+    "image": "https://m.media-amazon.com/images/I/71jG+e7roXL._AC_SL1500_.jpg",
+    "description": "Business-class laptop known for durability, performance, and excellent keyboard.",
+    "reviewComments": ["Best keyboard ever.", "Very durable.", "Great for office work."]
+  },
+  {
+    "id": 5,
+    "title": "ASUS ROG Zephyrus G14",
+    "brand": "ASUS",
+    "battery_mah": 4800,
+    "star": 4.8,
+    "reviews": 992,
+    "image": "/product/ASUS ROG Zephyrus G14.jpg",
+    "description": "Powerful gaming laptop with Ryzen processor and RTX graphics.",
+    "reviewComments": ["Strong gaming performance.", "Compact for gaming.", "Excellent cooling."]
+  },
+  {
+    "id": 6,
+    "title": "Acer Swift 3",
+    "brand": "Acer",
+    "battery_mah": 4200,
+    "star": 4.4,
+    "reviews": 721,
+    "image": "/product/Acer Swift 3.webp",
+    "description": "Lightweight everyday laptop with solid battery life and aluminum body.",
+    "reviewComments": ["Great value for money.", "Lightweight and fast.", "Nice performance."]
+  },
+  {
+    "id": 7,
+    "title": "Microsoft Surface Laptop 5",
+    "brand": "Microsoft",
+    "battery_mah": 4600,
+    "star": 4.5,
+    "reviews": 498,
+    "image": "/product/Microsoft Surface Laptop 5.jpeg",
+    "description": "Premium Windows laptop with PixelSense touchscreen display.",
+    "reviewComments": ["Smooth performance.", "Clean Windows experience.", "Excellent screen."]
+  },
+  {
+    "id": 8,
+    "title": "Razer Blade 15",
+    "brand": "Razer",
+    "battery_mah": 5200,
+    "star": 4.6,
+    "reviews": 402,
+    "image": "/product/Razer Blade 15.jpg",
+    "description": "High-end gaming laptop with sleek black aluminum chassis.",
+    "reviewComments": ["Premium feel.", "Great for gaming.", "Powerful GPU performance."]
+  },
+  {
+    "id": 9,
+    "title": "Lenovo Legion 5 Pro",
+    "brand": "Lenovo",
+    "battery_mah": 5300,
+    "star": 4.7,
+    "reviews": 812,
+    "image": "/product/Lenovo Legion 5 Pro.webp",
+    "description": "Gaming powerhouse with high refresh rate display and strong cooling.",
+    "reviewComments": ["Amazing for gaming.", "Strong build.", "Very smooth graphics."]
+  },
+  {
+    "id": 10,
+    "title": "HP Pavilion 15",
+    "brand": "HP",
+    "battery_mah": 4000,
+    "star": 4.3,
+    "reviews": 610,
+    "image": "/product/HP Pavilion 15.jpeg",
+    "description": "Affordable everyday laptop suitable for students and office tasks.",
+    "reviewComments": ["Budget friendly.", "Good for students.", "Reliable performance."]
+  },
+  {
+    "id": 11,
+    "title": "ASUS VivoBook 15",
+    "brand": "ASUS",
+    "battery_mah": 3900,
+    "star": 4.2,
+    "reviews": 980,
+    "image": "/product/ASUS VivoBook 15.jpg",
+    "description": "Slim laptop designed for productivity and casual multimedia use.",
+    "reviewComments": ["Nice design.", "Affordable.", "Good daily driver."]
+  },
+  {
+    "id": 12,
+    "title": "Acer Predator Helios 300",
+    "brand": "Acer",
+    "battery_mah": 5100,
+    "star": 4.6,
+    "reviews": 756,
+    "image": "/product/Acer Predator Helios 300.jpg",
+    "description": "Performance-focused gaming laptop with strong GPU and cooling.",
+    "reviewComments": ["Great FPS performance.", "Solid cooling.", "Value gaming laptop."]
+  },
+  {
+    "id": 13,
+    "title": "MSI Stealth 14 Studio",
+    "brand": "MSI",
+    "battery_mah": 4700,
+    "star": 4.5,
+    "reviews": 322,
+    "image": "/product/MSI Stealth 14 Studio.jpeg",
+    "description": "Compact creator laptop with powerful GPU for editing and gaming.",
+    "reviewComments": ["Perfect for creators.", "Fast rendering.", "Very portable."]
+  },
+  {
+    "id": 14,
+    "title": "Samsung Galaxy Book3 Pro",
+    "brand": "Samsung",
+    "battery_mah": 4400,
+    "star": 4.6,
+    "reviews": 287,
+    "image": "/product/Samsung Galaxy Book3 Pro.png",
+    "description": "Thin and light laptop with AMOLED display and premium design.",
+    "reviewComments": ["Beautiful screen.", "Lightweight.", "Smooth performance."]
+  },
+  {
+    "id": 15,
+    "title": "Framework Laptop 13",
+    "brand": "Framework",
+    "battery_mah": 4300,
+    "star": 4.7,
+    "reviews": 210,
+    "image": "/product/Framework Laptop 13.avif",
+    "description": "Modular and repairable laptop designed for sustainability and upgrades.",
+    "reviewComments": ["Love the modular design.", "Easy to upgrade.", "Very unique concept."]
+  }
+]
