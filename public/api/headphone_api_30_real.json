@@ -1,0 +1,452 @@
+[
+  {
+    "id": 1,
+    "brand": "Sony",
+    "title": "Sony WH-1000XM5",
+    "battery": "836mAh",
+    "star": 4.4,
+    "reviews": 1087,
+    "description": "Sony WH-1000XM5 premium headphone offering immersive sound, active noise cancellation and comfortable design.",
+    "reviewComments": [
+      "Sound quality is clear and powerful.",
+      "Battery lasts long for daily use.",
+      "Comfortable fit and solid build quality."
+    ],
+    "image": "/product/Sony WH-1000XM5.jpeg"
+  },
+  {
+    "id": 2,
+    "brand": "Sony",
+    "title": "Sony WF-1000XM5",
+    "battery": "1131mAh",
+    "star": 4.8,
+    "reviews": 589,
+    "description": "Sony WF-1000XM5 premium headphone offering immersive sound, active noise cancellation and comfortable design.",
+    "reviewComments": [
+      "Sound quality is clear and powerful.",
+      "Battery lasts long for daily use.",
+      "Comfortable fit and solid build quality."
+    ],
+    "image": "/product/Sony WF-1000XM5.jpg"
+  },
+  {
+    "id": 3,
+    "brand": "Bose",
+    "title": "Bose QuietComfort Ultra",
+    "battery": "448mAh",
+    "star": 4.7,
+    "reviews": 2932,
+    "description": "Bose QuietComfort Ultra premium headphone offering immersive sound, active noise cancellation and comfortable design.",
+    "reviewComments": [
+      "Sound quality is clear and powerful.",
+      "Battery lasts long for daily use.",
+      "Comfortable fit and solid build quality."
+    ],
+    "image": "/product/Bose QuietComfort Ultra.jpeg"
+  },
+  {
+    "id": 4,
+    "brand": "Bose",
+    "title": "Bose 700",
+    "battery": "1153mAh",
+    "star": 4.7,
+    "reviews": 1664,
+    "description": "Bose 700 premium headphone offering immersive sound, active noise cancellation and comfortable design.",
+    "reviewComments": [
+      "Sound quality is clear and powerful.",
+      "Battery lasts long for daily use.",
+      "Comfortable fit and solid build quality."
+    ],
+    "image": "/product/Bose 700.jpeg"
+  },
+  {
+    "id": 5,
+    "brand": "Apple",
+    "title": "Apple AirPods Max",
+    "battery": "849mAh",
+    "star": 4.6,
+    "reviews": 721,
+    "description": "Apple AirPods Max premium headphone offering immersive sound, active noise cancellation and comfortable design.",
+    "reviewComments": [
+      "Sound quality is clear and powerful.",
+      "Battery lasts long for daily use.",
+      "Comfortable fit and solid build quality."
+    ],
+    "image": "/product/Apple AirPods Max.webp"
+  },
+  {
+    "id": 6,
+    "brand": "Apple",
+    "title": "Apple AirPods Pro 2",
+    "battery": "1076mAh",
+    "star": 4.5,
+    "reviews": 549,
+    "description": "Apple AirPods Pro 2 premium headphone offering immersive sound, active noise cancellation and comfortable design.",
+    "reviewComments": [
+      "Sound quality is clear and powerful.",
+      "Battery lasts long for daily use.",
+      "Comfortable fit and solid build quality."
+    ],
+    "image": "/product/Apple AirPods Pro 2.webp"
+  },
+  {
+    "id": 7,
+    "brand": "Samsung",
+    "title": "Samsung Galaxy Buds2 Pro",
+    "battery": "1132mAh",
+    "star": 4.4,
+    "reviews": 3188,
+    "description": "Samsung Galaxy Buds2 Pro premium headphone offering immersive sound, active noise cancellation and comfortable design.",
+    "reviewComments": [
+      "Sound quality is clear and powerful.",
+      "Battery lasts long for daily use.",
+      "Comfortable fit and solid build quality."
+    ],
+    "image": "/product/Samsung Galaxy Buds2 Pro.webp"
+  },
+  {
+    "id": 8,
+    "brand": "Samsung",
+    "title": "Samsung Galaxy Buds FE",
+    "battery": "1141mAh",
+    "star": 4.7,
+    "reviews": 4774,
+    "description": "Samsung Galaxy Buds FE premium headphone offering immersive sound, active noise cancellation and comfortable design.",
+    "reviewComments": [
+      "Sound quality is clear and powerful.",
+      "Battery lasts long for daily use.",
+      "Comfortable fit and solid build quality."
+    ],
+    "image": "/product/Samsung Galaxy Buds FE.jpg"
+  },
+  {
+    "id": 9,
+    "brand": "JBL",
+    "title": "JBL Tune 760NC",
+    "battery": "748mAh",
+    "star": 4.3,
+    "reviews": 3048,
+    "description": "JBL Tune 760NC premium headphone offering immersive sound, active noise cancellation and comfortable design.",
+    "reviewComments": [
+      "Sound quality is clear and powerful.",
+      "Battery lasts long for daily use.",
+      "Comfortable fit and solid build quality."
+    ],
+    "image": "/product/JBL Tune 760NC.jpeg"
+  },
+  {
+    "id": 10,
+    "brand": "JBL",
+    "title": "JBL Live 660NC",
+    "battery": "896mAh",
+    "star": 4.7,
+    "reviews": 4451,
+    "description": "JBL Live 660NC premium headphone offering immersive sound, active noise cancellation and comfortable design.",
+    "reviewComments": [
+      "Sound quality is clear and powerful.",
+      "Battery lasts long for daily use.",
+      "Comfortable fit and solid build quality."
+    ],
+    "image": "/product/JBL Live 660NC.jpeg"
+  },
+  {
+    "id": 11,
+    "brand": "Beats",
+    "title": "Beats Studio Pro",
+    "battery": "672mAh",
+    "star": 4.6,
+    "reviews": 3705,
+    "description": "Beats Studio Pro premium headphone offering immersive sound, active noise cancellation and comfortable design.",
+    "reviewComments": [
+      "Sound quality is clear and powerful.",
+      "Battery lasts long for daily use.",
+      "Comfortable fit and solid build quality."
+    ],
+    "image": "/product/Beats Studio Pro.webp"
+  },
+  {
+    "id": 12,
+    "brand": "Beats",
+    "title": "Beats Fit Pro",
+    "battery": "347mAh",
+    "star": 4.9,
+    "reviews": 2378,
+    "description": "Beats Fit Pro premium headphone offering immersive sound, active noise cancellation and comfortable design.",
+    "reviewComments": [
+      "Sound quality is clear and powerful.",
+      "Battery lasts long for daily use.",
+      "Comfortable fit and solid build quality."
+    ],
+    "image": "/product/Beats Fit Pro.jpg"
+  },
+  {
+    "id": 13,
+    "brand": "Anker",
+    "title": "Soundcore Space Q45",
+    "battery": "923mAh",
+    "star": 4.7,
+    "reviews": 3989,
+    "description": "Soundcore Space Q45 premium headphone offering immersive sound, active noise cancellation and comfortable design.",
+    "reviewComments": [
+      "Sound quality is clear and powerful.",
+      "Battery lasts long for daily use.",
+      "Comfortable fit and solid build quality."
+    ],
+    "image": "/product/Soundcore Space Q45.jpeg"
+  },
+  {
+    "id": 14,
+    "brand": "Anker",
+    "title": "Soundcore Liberty 4 NC",
+    "battery": "940mAh",
+    "star": 4.4,
+    "reviews": 3787,
+    "description": "Soundcore Liberty 4 NC premium headphone offering immersive sound, active noise cancellation and comfortable design.",
+    "reviewComments": [
+      "Sound quality is clear and powerful.",
+      "Battery lasts long for daily use.",
+      "Comfortable fit and solid build quality."
+    ],
+    "image": "/product/Soundcore Liberty 4 NC.webp"
+  },
+  {
+    "id": 15,
+    "brand": "Sennheiser",
+    "title": "Sennheiser Momentum 4",
+    "battery": "969mAh",
+    "star": 4.6,
+    "reviews": 1710,
+    "description": "Sennheiser Momentum 4 premium headphone offering immersive sound, active noise cancellation and comfortable design.",
+    "reviewComments": [
+      "Sound quality is clear and powerful.",
+      "Battery lasts long for daily use.",
+      "Comfortable fit and solid build quality."
+    ],
+    "image": "/product/Sennheiser Momentum 4.jpeg"
+  },
+  {
+    "id": 16,
+    "brand": "Sennheiser",
+    "title": "Sennheiser CX Plus",
+    "battery": "326mAh",
+    "star": 4.7,
+    "reviews": 2165,
+    "description": "Sennheiser CX Plus premium headphone offering immersive sound, active noise cancellation and comfortable design.",
+    "reviewComments": [
+      "Sound quality is clear and powerful.",
+      "Battery lasts long for daily use.",
+      "Comfortable fit and solid build quality."
+    ],
+    "image": "/product/Sennheiser CX Plus.jpg"
+  },
+  {
+    "id": 17,
+    "brand": "Skullcandy",
+    "title": "Skullcandy Crusher Evo",
+    "battery": "537mAh",
+    "star": 4.9,
+    "reviews": 2633,
+    "description": "Skullcandy Crusher Evo premium headphone offering immersive sound, active noise cancellation and comfortable design.",
+    "reviewComments": [
+      "Sound quality is clear and powerful.",
+      "Battery lasts long for daily use.",
+      "Comfortable fit and solid build quality."
+    ],
+    "image": "/product/Skullcandy Crusher Evo.jpg"
+  },
+  {
+    "id": 18,
+    "brand": "Skullcandy",
+    "title": "Skullcandy Hesh ANC",
+    "battery": "1169mAh",
+    "star": 4.2,
+    "reviews": 2698,
+    "description": "Skullcandy Hesh ANC premium headphone offering immersive sound, active noise cancellation and comfortable design.",
+    "reviewComments": [
+      "Sound quality is clear and powerful.",
+      "Battery lasts long for daily use.",
+      "Comfortable fit and solid build quality."
+    ],
+    "image": "/product/Skullcandy Hesh ANC.jpeg"
+  },
+  {
+    "id": 19,
+    "brand": "OnePlus",
+    "title": "OnePlus Buds Pro 2",
+    "battery": "743mAh",
+    "star": 4.2,
+    "reviews": 3564,
+    "description": "OnePlus Buds Pro 2 premium headphone offering immersive sound, active noise cancellation and comfortable design.",
+    "reviewComments": [
+      "Sound quality is clear and powerful.",
+      "Battery lasts long for daily use.",
+      "Comfortable fit and solid build quality."
+    ],
+    "image": "/product/OnePlus Buds Pro 2.webp"
+  },
+  {
+    "id": 20,
+    "brand": "OnePlus",
+    "title": "OnePlus Nord Buds 2",
+    "battery": "804mAh",
+    "star": 4.3,
+    "reviews": 2717,
+    "description": "OnePlus Nord Buds 2 premium headphone offering immersive sound, active noise cancellation and comfortable design.",
+    "reviewComments": [
+      "Sound quality is clear and powerful.",
+      "Battery lasts long for daily use.",
+      "Comfortable fit and solid build quality."
+    ],
+    "image": "/product/OnePlus Nord Buds 2.webp"
+  },
+  {
+    "id": 21,
+    "brand": "Nothing",
+    "title": "Nothing Ear (2)",
+    "battery": "424mAh",
+    "star": 4.3,
+    "reviews": 1077,
+    "description": "Nothing Ear (2) premium headphone offering immersive sound, active noise cancellation and comfortable design.",
+    "reviewComments": [
+      "Sound quality is clear and powerful.",
+      "Battery lasts long for daily use.",
+      "Comfortable fit and solid build quality."
+    ],
+    "image": "/product/Nothing Ear (2).jpg"
+  },
+  {
+    "id": 22,
+    "brand": "Nothing",
+    "title": "Nothing Ear (Stick)",
+    "battery": "862mAh",
+    "star": 4.4,
+    "reviews": 4043,
+    "description": "Nothing Ear (Stick) premium headphone offering immersive sound, active noise cancellation and comfortable design.",
+    "reviewComments": [
+      "Sound quality is clear and powerful.",
+      "Battery lasts long for daily use.",
+      "Comfortable fit and solid build quality."
+    ],
+    "image": "/product/Nothing Ear (Stick).jpg"
+  },
+  {
+    "id": 23,
+    "brand": "Huawei",
+    "title": "Huawei FreeBuds Pro 3",
+    "battery": "1118mAh",
+    "star": 4.7,
+    "reviews": 2535,
+    "description": "Huawei FreeBuds Pro 3 premium headphone offering immersive sound, active noise cancellation and comfortable design.",
+    "reviewComments": [
+      "Sound quality is clear and powerful.",
+      "Battery lasts long for daily use.",
+      "Comfortable fit and solid build quality."
+    ],
+    "image": "/product/Huawei FreeBuds Pro 3.jpg"
+  },
+  {
+    "id": 24,
+    "brand": "Huawei",
+    "title": "Huawei FreeBuds 5",
+    "battery": "584mAh",
+    "star": 4.6,
+    "reviews": 3763,
+    "description": "Huawei FreeBuds 5 premium headphone offering immersive sound, active noise cancellation and comfortable design.",
+    "reviewComments": [
+      "Sound quality is clear and powerful.",
+      "Battery lasts long for daily use.",
+      "Comfortable fit and solid build quality."
+    ],
+    "image": "/product/Huawei FreeBuds 5.jpeg"
+  },
+  {
+    "id": 25,
+    "brand": "Realme",
+    "title": "Realme Buds Air 5 Pro",
+    "battery": "749mAh",
+    "star": 4.6,
+    "reviews": 3793,
+    "description": "Realme Buds Air 5 Pro premium headphone offering immersive sound, active noise cancellation and comfortable design.",
+    "reviewComments": [
+      "Sound quality is clear and powerful.",
+      "Battery lasts long for daily use.",
+      "Comfortable fit and solid build quality."
+    ],
+    "image": "/product/Realme Buds Air 5 Pro.jpg"
+  },
+  {
+    "id": 26,
+    "brand": "Realme",
+    "title": "Realme Buds Wireless 3",
+    "battery": "709mAh",
+    "star": 4.6,
+    "reviews": 3519,
+    "description": "Realme Buds Wireless 3 premium headphone offering immersive sound, active noise cancellation and comfortable design.",
+    "reviewComments": [
+      "Sound quality is clear and powerful.",
+      "Battery lasts long for daily use.",
+      "Comfortable fit and solid build quality."
+    ],
+    "image": "/product/Realme Buds Wireless 3.png"
+  },
+  {
+    "id": 27,
+    "brand": "Xiaomi",
+    "title": "Redmi Buds 4 Pro",
+    "battery": "423mAh",
+    "star": 4.5,
+    "reviews": 2451,
+    "description": "Redmi Buds 4 Pro premium headphone offering immersive sound, active noise cancellation and comfortable design.",
+    "reviewComments": [
+      "Sound quality is clear and powerful.",
+      "Battery lasts long for daily use.",
+      "Comfortable fit and solid build quality."
+    ],
+    "image": "/product/Redmi Buds 4 Pro.jpg"
+  },
+  {
+    "id": 28,
+    "brand": "Xiaomi",
+    "title": "Xiaomi Buds 3T Pro",
+    "battery": "402mAh",
+    "star": 4.4,
+    "reviews": 754,
+    "description": "Xiaomi Buds 3T Pro premium headphone offering immersive sound, active noise cancellation and comfortable design.",
+    "reviewComments": [
+      "Sound quality is clear and powerful.",
+      "Battery lasts long for daily use.",
+      "Comfortable fit and solid build quality."
+    ],
+    "image": "/product/Xiaomi Buds 3T Pro.webp"
+  },
+  {
+    "id": 29,
+    "brand": "Oppo",
+    "title": "Oppo Enco X2",
+    "battery": "972mAh",
+    "star": 4.4,
+    "reviews": 3169,
+    "description": "Oppo Enco X2 premium headphone offering immersive sound, active noise cancellation and comfortable design.",
+    "reviewComments": [
+      "Sound quality is clear and powerful.",
+      "Battery lasts long for daily use.",
+      "Comfortable fit and solid build quality."
+    ],
+    "image": "/product/Oppo Enco X2.png"
+  },
+  {
+    "id": 30,
+    "brand": "Oppo",
+    "title": "Oppo Enco Air3 Pro",
+    "battery": "1176mAh",
+    "star": 4.6,
+    "reviews": 2002,
+    "description": "Oppo Enco Air3 Pro premium headphone offering immersive sound, active noise cancellation and comfortable design.",
+    "reviewComments": [
+      "Sound quality is clear and powerful.",
+      "Battery lasts long for daily use.",
+      "Comfortable fit and solid build quality."
+    ],
+    "image": "/product/Oppo Enco Air3 Pro.jpg"
+  }
+]
