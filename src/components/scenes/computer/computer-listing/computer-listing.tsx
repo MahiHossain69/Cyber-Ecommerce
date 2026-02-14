@@ -1,10 +1,14 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { Breadcrumb } from "../breadcrumb";
-import { Filters } from "../filters";
-import { ComputerGrid } from "../computer-grid";
-import { Pagination } from "../../smartphone/pagination";
+import {
+  ProductBreadcrumb,
+  ProductPagination,
+  ProductGrid,
+  ProductFilters,
+  FilterOption,
+  Product,
+} from "@/components/shared";
 
 interface Computer {
   id: number;
@@ -166,31 +170,71 @@ export function ComputerListing() {
     );
   }
 
+  // Prepare additional filters
+  const additionalFilters: FilterOption[] = [
+    {
+      label: "Battery life",
+      key: "battery",
+      values: Array.from(new Set(computers.map((c) => c.battery).filter(Boolean))).sort(),
+    },
+    {
+      label: "Processor",
+      key: "processor",
+      values: Array.from(new Set(computers.map((c) => c.processor).filter(Boolean))).sort(),
+    },
+    {
+      label: "RAM",
+      key: "ram",
+      values: Array.from(new Set(computers.map((c) => c.ram).filter(Boolean))).sort(),
+    },
+    {
+      label: "Storage",
+      key: "storage",
+      values: Array.from(new Set(computers.map((c) => c.storage).filter(Boolean))).sort(),
+    },
+    {
+      label: "Screen size",
+      key: "screenSize",
+      values: Array.from(new Set(computers.map((c) => c.screenSize).filter(Boolean))).sort(),
+    },
+  ];
+
+  // Convert computers to Product format
+  const productsForGrid: Product[] = currentComputers.map((computer) => ({
+    id: computer.id,
+    brand: computer.brand,
+    title: computer.title,
+    star: computer.star,
+    reviews: computer.reviews,
+    image: computer.image,
+    price: computer.price,
+  }));
+
   return (
     <section className="bg-white py-8">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <Breadcrumb />
+        <ProductBreadcrumb category="Computers" />
 
         <div className="flex flex-col lg:flex-row gap-8">
-          <Filters
+          <ProductFilters
             brands={brands}
-            computerCounts={computerCounts}
+            brandCounts={computerCounts}
             selectedBrands={selectedBrands}
             searchQuery={searchQuery}
             brandOpen={brandOpen}
-            computers={computers}
+            additionalFilters={additionalFilters}
             onBrandToggle={toggleBrand}
             onSearchChange={setSearchQuery}
             onBrandOpenChange={setBrandOpen}
           />
 
           <main className="flex-1">
-            <ComputerGrid
-              computers={currentComputers}
+            <ProductGrid
+              products={productsForGrid}
               totalCount={sortedComputers.length}
               onSortChange={setSortBy}
             />
-            <Pagination
+            <ProductPagination
               currentPage={currentPage}
               totalPages={totalPages}
               onPageChange={setCurrentPage}

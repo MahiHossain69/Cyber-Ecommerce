@@ -2,17 +2,17 @@ import { ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
-interface PaginationProps {
+interface ProductPaginationProps {
   currentPage: number;
   totalPages: number;
   onPageChange: (page: number) => void;
 }
 
-export function Pagination({
+export function ProductPagination({
   currentPage,
   totalPages,
   onPageChange,
-}: PaginationProps) {
+}: ProductPaginationProps) {
   const getPaginationRange = () => {
     const range: (number | string)[] = [];
     const showPages = 5;

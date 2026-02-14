@@ -1,10 +1,14 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { Breadcrumb } from "../breadcrumb";
-import { Filters } from "../filters";
-import { HeadphoneGrid } from "../headphone-grid";
-import { Pagination } from "../../smartphone/pagination";
+import {
+  ProductBreadcrumb,
+  ProductPagination,
+  ProductGrid,
+  ProductFilters,
+  FilterOption,
+  Product,
+} from "@/components/shared";
 
 interface Headphone {
   id: number;
@@ -162,31 +166,71 @@ export function HeadphoneListing() {
     );
   }
 
+  // Prepare additional filters
+  const additionalFilters: FilterOption[] = [
+    {
+      label: "Battery life",
+      key: "battery",
+      values: Array.from(new Set(headphones.map((h) => h.battery).filter(Boolean))).sort(),
+    },
+    {
+      label: "Type",
+      key: "type",
+      values: Array.from(new Set(headphones.map((h) => h.type).filter(Boolean))).sort(),
+    },
+    {
+      label: "Connectivity",
+      key: "connectivity",
+      values: Array.from(new Set(headphones.map((h) => h.connectivity).filter(Boolean))).sort(),
+    },
+    {
+      label: "Noise cancellation",
+      key: "noiseCancellation",
+      values: Array.from(new Set(headphones.map((h) => h.noiseCancellation).filter(Boolean))).sort(),
+    },
+    {
+      label: "Driver size",
+      key: "driverSize",
+      values: Array.from(new Set(headphones.map((h) => h.driverSize).filter(Boolean))).sort(),
+    },
+  ];
+
+  // Convert headphones to Product format
+  const productsForGrid: Product[] = currentHeadphones.map((headphone) => ({
+    id: headphone.id,
+    brand: headphone.brand,
+    title: headphone.title,
+    star: headphone.star,
+    reviews: headphone.reviews,
+    image: headphone.image,
+    price: headphone.price,
+  }));
+
   return (
     <section className="bg-white py-8">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <Breadcrumb />
+        <ProductBreadcrumb category="Headphones" />
 
         <div className="flex flex-col lg:flex-row gap-8">
-          <Filters
+          <ProductFilters
             brands={brands}
-            headphoneCounts={headphoneCounts}
+            brandCounts={headphoneCounts}
             selectedBrands={selectedBrands}
             searchQuery={searchQuery}
             brandOpen={brandOpen}
-            headphones={headphones}
+            additionalFilters={additionalFilters}
             onBrandToggle={toggleBrand}
             onSearchChange={setSearchQuery}
             onBrandOpenChange={setBrandOpen}
           />
 
           <main className="flex-1">
-            <HeadphoneGrid
-              headphones={currentHeadphones}
+            <ProductGrid
+              products={productsForGrid}
               totalCount={sortedHeadphones.length}
               onSortChange={setSortBy}
             />
-            <Pagination
+            <ProductPagination
               currentPage={currentPage}
               totalPages={totalPages}
               onPageChange={setCurrentPage}

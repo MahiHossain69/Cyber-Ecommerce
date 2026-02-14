@@ -1,10 +1,14 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { Breadcrumb } from "../breadcrumb";
-import { Filters } from "../filters";
-import { SmartwatchGrid } from "../smartwatch-grid";
-import { Pagination } from "../../smartphone/pagination";
+import {
+  ProductBreadcrumb,
+  ProductPagination,
+  ProductGrid,
+  ProductFilters,
+  FilterOption,
+  Product,
+} from "@/components/shared";
 
 interface Smartwatch {
   id: number;
@@ -149,31 +153,66 @@ export function SmartwatchListing() {
     );
   }
 
+  // Prepare additional filters
+  const additionalFilters: FilterOption[] = [
+    {
+      label: "Battery capacity",
+      key: "battery",
+      values: Array.from(new Set(watches.map((w) => w.battery).filter(Boolean))).sort(),
+    },
+    {
+      label: "Display type",
+      key: "displayType",
+      values: Array.from(new Set(watches.map((w) => w.displayType).filter(Boolean))).sort(),
+    },
+    {
+      label: "Water resistance",
+      key: "waterResistance",
+      values: Array.from(new Set(watches.map((w) => w.waterResistance).filter(Boolean))).sort(),
+    },
+    {
+      label: "Connectivity",
+      key: "connectivity",
+      values: Array.from(new Set(watches.map((w) => w.connectivity).filter(Boolean))).sort(),
+    },
+  ];
+
+  // Convert watches to Product format
+  const productsForGrid: Product[] = currentWatches.map((watch) => ({
+    id: watch.id,
+    brand: watch.brand,
+    title: watch.title,
+    star: watch.star,
+    reviews: watch.reviews,
+    image: watch.image,
+    price: watch.price,
+  }));
+
   return (
     <section className="bg-white py-8">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <Breadcrumb />
+        <ProductBreadcrumb category="Smart Watches" />
 
         <div className="flex flex-col lg:flex-row gap-8">
-          <Filters
+          <ProductFilters
             brands={brands}
-            watchCounts={watchCounts}
+            brandCounts={watchCounts}
             selectedBrands={selectedBrands}
             searchQuery={searchQuery}
             brandOpen={brandOpen}
-            watches={watches}
+            additionalFilters={additionalFilters}
             onBrandToggle={toggleBrand}
             onSearchChange={setSearchQuery}
             onBrandOpenChange={setBrandOpen}
           />
 
           <main className="flex-1">
-            <SmartwatchGrid
-              watches={currentWatches}
+            <ProductGrid
+              products={productsForGrid}
               totalCount={sortedWatches.length}
               onSortChange={setSortBy}
             />
-            <Pagination
+            <ProductPagination
               currentPage={currentPage}
               totalPages={totalPages}
               onPageChange={setCurrentPage}

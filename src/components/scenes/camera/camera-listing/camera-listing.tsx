@@ -1,10 +1,14 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { Breadcrumb } from "../breadcrumb";
-import { Filters } from "../filters";
-import { CameraGrid } from "../camera-grid";
-import { Pagination } from "../../smartphone/pagination";
+import {
+  ProductBreadcrumb,
+  ProductPagination,
+  ProductGrid,
+  ProductFilters,
+  FilterOption,
+  Product,
+} from "@/components/shared";
 
 interface Camera {
   id: number;
@@ -153,31 +157,71 @@ export function CameraListing() {
     );
   }
 
+  // Prepare additional filters
+  const additionalFilters: FilterOption[] = [
+    {
+      label: "Battery capacity",
+      key: "battery",
+      values: Array.from(new Set(cameras.map((c) => c.battery).filter(Boolean))).sort(),
+    },
+    {
+      label: "Sensor type",
+      key: "sensorType",
+      values: Array.from(new Set(cameras.map((c) => c.sensorType).filter(Boolean))).sort(),
+    },
+    {
+      label: "Resolution",
+      key: "resolution",
+      values: Array.from(new Set(cameras.map((c) => c.resolution).filter(Boolean))).sort(),
+    },
+    {
+      label: "Video capability",
+      key: "videoCapability",
+      values: Array.from(new Set(cameras.map((c) => c.videoCapability).filter(Boolean))).sort(),
+    },
+    {
+      label: "Lens mount",
+      key: "lensMount",
+      values: Array.from(new Set(cameras.map((c) => c.lensMount).filter(Boolean))).sort(),
+    },
+  ];
+
+  // Convert cameras to Product format
+  const productsForGrid: Product[] = currentCameras.map((camera) => ({
+    id: camera.id,
+    brand: camera.brand,
+    title: camera.title,
+    star: camera.star,
+    reviews: camera.reviews,
+    image: camera.image,
+    price: camera.price,
+  }));
+
   return (
     <section className="bg-white py-8">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <Breadcrumb />
+        <ProductBreadcrumb category="Cameras" />
 
         <div className="flex flex-col lg:flex-row gap-8">
-          <Filters
+          <ProductFilters
             brands={brands}
-            cameraCounts={cameraCounts}
+            brandCounts={cameraCounts}
             selectedBrands={selectedBrands}
             searchQuery={searchQuery}
             brandOpen={brandOpen}
-            cameras={cameras}
+            additionalFilters={additionalFilters}
             onBrandToggle={toggleBrand}
             onSearchChange={setSearchQuery}
             onBrandOpenChange={setBrandOpen}
           />
 
           <main className="flex-1">
-            <CameraGrid
-              cameras={currentCameras}
+            <ProductGrid
+              products={productsForGrid}
               totalCount={sortedCameras.length}
               onSortChange={setSortBy}
             />
-            <Pagination
+            <ProductPagination
               currentPage={currentPage}
               totalPages={totalPages}
               onPageChange={setCurrentPage}

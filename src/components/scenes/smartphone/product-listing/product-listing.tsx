@@ -1,10 +1,14 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { Breadcrumb } from "../breadcrumb";
-import { Filters } from "../filters";
-import { ProductGrid } from "../product-grid";
-import { Pagination } from "../pagination";
+import {
+  ProductBreadcrumb,
+  ProductPagination,
+  ProductGrid,
+  ProductFilters,
+  FilterOption,
+  Product,
+} from "@/components/shared";
 
 interface Phone {
   id: number;
@@ -18,6 +22,8 @@ interface Phone {
   protectionClass?: string;
   builtInMemory?: string;
   rating?: number;
+  star?: number;
+  reviews?: number;
 }
 
 interface ApiResponse {
@@ -36,6 +42,9 @@ const addSpecifications = (phone: Phone): Phone => {
   const protectionClasses = ["IP67", "IP68", "None"];
   const memoryOptions = ["64GB", "128GB", "256GB", "512GB", "1TB"];
   
+  const rating = 3 + (phone.id % 3); // Rating between 3-5
+  const reviews = 100 + (phone.id * 50); // Reviews between 100-3400
+  
   return {
     ...phone,
     batteryCapacity: batteryOptions[phone.id % batteryOptions.length],
@@ -43,7 +52,9 @@ const addSpecifications = (phone: Phone): Phone => {
     screenDiagonal: screenSizes[phone.id % screenSizes.length],
     protectionClass: protectionClasses[phone.id % protectionClasses.length],
     builtInMemory: memoryOptions[phone.id % memoryOptions.length],
-    rating: 3 + (phone.id % 3), // Rating between 3-5
+    rating,
+    star: rating,
+    reviews,
   };
 };
 
@@ -145,19 +156,59 @@ export function ProductListing() {
     );
   }
 
+  // Prepare additional filters
+  const additionalFilters: FilterOption[] = [
+    {
+      label: "Battery capacity",
+      key: "batteryCapacity",
+      values: Array.from(new Set(phones.map((p) => p.batteryCapacity).filter(Boolean))).sort(),
+    },
+    {
+      label: "Screen type",
+      key: "screenType",
+      values: Array.from(new Set(phones.map((p) => p.screenType).filter(Boolean))).sort(),
+    },
+    {
+      label: "Screen diagonal",
+      key: "screenDiagonal",
+      values: Array.from(new Set(phones.map((p) => p.screenDiagonal).filter(Boolean))).sort(),
+    },
+    {
+      label: "Protection class",
+      key: "protectionClass",
+      values: Array.from(new Set(phones.map((p) => p.protectionClass).filter(Boolean))).sort(),
+    },
+    {
+      label: "Built-in memory",
+      key: "builtInMemory",
+      values: Array.from(new Set(phones.map((p) => p.builtInMemory).filter(Boolean))).sort(),
+    },
+  ];
+
+  // Convert phones to Product format
+  const productsForGrid: Product[] = currentPhones.map((phone) => ({
+    id: phone.id,
+    brand: phone.brand,
+    title: phone.model,
+    star: phone.star || 4,
+    reviews: phone.reviews || 100,
+    image: phone.image,
+    price: phone.price,
+  }));
+
   return (
     <section className="bg-white py-8">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <Breadcrumb />
+        <ProductBreadcrumb category="Smartphones" />
 
         <div className="flex flex-col lg:flex-row gap-8">
-          <Filters
+          <ProductFilters
             brands={brands}
-            phoneCounts={phoneCounts}
+            brandCounts={phoneCounts}
             selectedBrands={selectedBrands}
             searchQuery={searchQuery}
             brandOpen={brandOpen}
-            phones={phones}
+            additionalFilters={additionalFilters}
             onBrandToggle={toggleBrand}
             onSearchChange={setSearchQuery}
             onBrandOpenChange={setBrandOpen}
@@ -165,11 +216,11 @@ export function ProductListing() {
 
           <main className="flex-1">
             <ProductGrid
-              phones={currentPhones}
+              products={productsForGrid}
               totalCount={sortedPhones.length}
               onSortChange={setSortBy}
             />
-            <Pagination
+            <ProductPagination
               currentPage={currentPage}
               totalPages={totalPages}
               onPageChange={setCurrentPage}

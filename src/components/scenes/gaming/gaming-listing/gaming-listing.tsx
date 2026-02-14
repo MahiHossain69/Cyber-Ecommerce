@@ -1,10 +1,14 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { Breadcrumb } from "../breadcrumb";
-import { Filters } from "../filters";
-import { GamingGrid } from "../gaming-grid";
-import { Pagination } from "../../smartphone/pagination";
+import {
+  ProductBreadcrumb,
+  ProductPagination,
+  ProductGrid,
+  ProductFilters,
+  FilterOption,
+  Product,
+} from "@/components/shared";
 
 interface GamingItem {
   id: number;
@@ -180,31 +184,71 @@ export function GamingListing() {
     );
   }
 
+  // Prepare additional filters
+  const additionalFilters: FilterOption[] = [
+    {
+      label: "Battery life",
+      key: "battery",
+      values: Array.from(new Set(gamingItems.map((g) => g.battery).filter(Boolean))).sort(),
+    },
+    {
+      label: "Platform",
+      key: "platform",
+      values: Array.from(new Set(gamingItems.map((g) => g.platform).filter(Boolean))).sort(),
+    },
+    {
+      label: "Connectivity",
+      key: "connectivity",
+      values: Array.from(new Set(gamingItems.map((g) => g.connectivity).filter(Boolean))).sort(),
+    },
+    {
+      label: "Resolution",
+      key: "resolution",
+      values: Array.from(new Set(gamingItems.map((g) => g.resolution).filter(Boolean))).sort(),
+    },
+    {
+      label: "Refresh rate",
+      key: "refreshRate",
+      values: Array.from(new Set(gamingItems.map((g) => g.refreshRate).filter(Boolean))).sort(),
+    },
+  ];
+
+  // Convert gaming items to Product format
+  const productsForGrid: Product[] = currentItems.map((item) => ({
+    id: item.id,
+    brand: item.brand,
+    title: item.name,
+    star: item.star,
+    reviews: item.reviews,
+    image: item.image,
+    price: item.price,
+  }));
+
   return (
     <section className="bg-white py-8">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <Breadcrumb />
+        <ProductBreadcrumb category="Gaming" />
 
         <div className="flex flex-col lg:flex-row gap-8">
-          <Filters
+          <ProductFilters
             brands={brands}
-            gamingCounts={gamingCounts}
+            brandCounts={gamingCounts}
             selectedBrands={selectedBrands}
             searchQuery={searchQuery}
             brandOpen={brandOpen}
-            gamingItems={gamingItems}
+            additionalFilters={additionalFilters}
             onBrandToggle={toggleBrand}
             onSearchChange={setSearchQuery}
             onBrandOpenChange={setBrandOpen}
           />
 
           <main className="flex-1">
-            <GamingGrid
-              gamingItems={currentItems}
+            <ProductGrid
+              products={productsForGrid}
               totalCount={sortedItems.length}
               onSortChange={setSortBy}
             />
-            <Pagination
+            <ProductPagination
               currentPage={currentPage}
               totalPages={totalPages}
               onPageChange={setCurrentPage}
