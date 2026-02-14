@@ -1,0 +1,681 @@
+{
+  "success": true,
+  "total": 45,
+  "products": [
+    {
+      "id": 1,
+      "brand": "Canon",
+      "title": "Canon EOS R5",
+      "battery": "1135mAh",
+      "star": 4.8,
+      "reviews": 504,
+      "description": "Canon EOS R5 camera offering high-quality photography, advanced autofocus, and professional video capabilities.",
+      "reviewComments": [
+        "Solid build quality and premium feel.",
+        "Great battery performance for long shoots.",
+        "Lightweight and easy to carry."
+      ],
+      "image": "/product/canon eos r5.webp"
+    },
+    {
+      "id": 2,
+      "brand": "Canon",
+      "title": "Canon EOS R6",
+      "battery": "1200mAh",
+      "star": 4.8,
+      "reviews": 4623,
+      "description": "Canon EOS R6 camera offering high-quality photography, advanced autofocus, and professional video capabilities.",
+      "reviewComments": [
+        "Perfect for photography enthusiasts.",
+        "Great battery performance for long shoots.",
+        "Solid build quality and premium feel."
+      ],
+      "image": "/product/canon eos r6.jpeg"
+    },
+    {
+      "id": 3,
+      "brand": "Canon",
+      "title": "Canon EOS 90D",
+      "battery": "2289mAh",
+      "star": 4.8,
+      "reviews": 4321,
+      "description": "Canon EOS 90D camera offering high-quality photography, advanced autofocus, and professional video capabilities.",
+      "reviewComments": [
+        "Lightweight and easy to carry.",
+        "Great battery performance for long shoots.",
+        "Image quality is excellent with sharp details."
+      ],
+      "image": "/product/canon eos 90d.webp"
+    },
+    {
+      "id": 4,
+      "brand": "Canon",
+      "title": "Canon EOS M50 Mark II",
+      "battery": "2398mAh",
+      "star": 4.7,
+      "reviews": 4531,
+      "description": "Canon EOS M50 Mark II camera offering high-quality photography, advanced autofocus, and professional video capabilities.",
+      "reviewComments": [
+        "Great battery performance for long shoots.",
+        "Lightweight and easy to carry.",
+        "Image quality is excellent with sharp details."
+      ],
+      "image": "/product/canon eos m50 mark ii.webp"
+    },
+    {
+      "id": 5,
+      "brand": "Nikon",
+      "title": "Nikon Z9",
+      "battery": "2471mAh",
+      "star": 4.6,
+      "reviews": 847,
+      "description": "Nikon Z9 camera offering high-quality photography, advanced autofocus, and professional video capabilities.",
+      "reviewComments": [
+        "Lightweight and easy to carry.",
+        "Great battery performance for long shoots.",
+        "Image quality is excellent with sharp details."
+      ],
+      "image": "/product/Nikon Z9.webp"
+    },
+    {
+      "id": 6,
+      "brand": "Nikon",
+      "title": "Nikon Z8",
+      "battery": "1749mAh",
+      "star": 4.9,
+      "reviews": 4362,
+      "description": "Nikon Z8 camera offering high-quality photography, advanced autofocus, and professional video capabilities.",
+      "reviewComments": [
+        "Image quality is excellent with sharp details.",
+        "Perfect for photography enthusiasts.",
+        "Great battery performance for long shoots."
+      ],
+      "image": "/product/Nikon Z8.webp"
+    },
+    {
+      "id": 7,
+      "brand": "Nikon",
+      "title": "Nikon Z6 II",
+      "battery": "1665mAh",
+      "star": 5.0,
+      "reviews": 3257,
+      "description": "Nikon Z6 II camera offering high-quality photography, advanced autofocus, and professional video capabilities.",
+      "reviewComments": [
+        "Solid build quality and premium feel.",
+        "Image quality is excellent with sharp details.",
+        "Great battery performance for long shoots."
+      ],
+      "image": "/product/Nikon Z6 II.webp"
+    },
+    {
+      "id": 8,
+      "brand": "Nikon",
+      "title": "Nikon D850",
+      "battery": "815mAh",
+      "star": 4.1,
+      "reviews": 2804,
+      "description": "Nikon D850 camera offering high-quality photography, advanced autofocus, and professional video capabilities.",
+      "reviewComments": [
+        "Great battery performance for long shoots.",
+        "Solid build quality and premium feel.",
+        "Image quality is excellent with sharp details."
+      ],
+      "image": "/product/Nikon D850.jpg"
+    },
+    {
+      "id": 9,
+      "brand": "Sony",
+      "title": "Sony A1",
+      "battery": "2476mAh",
+      "star": 4.8,
+      "reviews": 1410,
+      "description": "Sony A1 camera offering high-quality photography, advanced autofocus, and professional video capabilities.",
+      "reviewComments": [
+        "Perfect for photography enthusiasts.",
+        "Lightweight and easy to carry.",
+        "Image quality is excellent with sharp details."
+      ],
+      "image": "/product/Sony A1.jpg"
+    },
+    {
+      "id": 10,
+      "brand": "Sony",
+      "title": "Sony A7 IV",
+      "battery": "978mAh",
+      "star": 4.1,
+      "reviews": 4625,
+      "description": "Sony A7 IV camera offering high-quality photography, advanced autofocus, and professional video capabilities.",
+      "reviewComments": [
+        "Great battery performance for long shoots.",
+        "Lightweight and easy to carry.",
+        "Perfect for photography enthusiasts."
+      ],
+      "image": "/product/Sony A7 IV.jpeg"
+    },
+    {
+      "id": 11,
+      "brand": "Sony",
+      "title": "Sony A7R V",
+      "battery": "1811mAh",
+      "star": 4.1,
+      "reviews": 4714,
+      "description": "Sony A7R V camera offering high-quality photography, advanced autofocus, and professional video capabilities.",
+      "reviewComments": [
+        "Lightweight and easy to carry.",
+        "Image quality is excellent with sharp details.",
+        "Perfect for photography enthusiasts."
+      ],
+      "image": "/product/Sony A7R V.webp"
+    },
+    {
+      "id": 12,
+      "brand": "Sony",
+      "title": "Sony A6400",
+      "battery": "1254mAh",
+      "star": 4.2,
+      "reviews": 1357,
+      "description": "Sony A6400 camera offering high-quality photography, advanced autofocus, and professional video capabilities.",
+      "reviewComments": [
+        "Solid build quality and premium feel.",
+        "Image quality is excellent with sharp details.",
+        "Perfect for photography enthusiasts."
+      ],
+      "image": "/product/Sony A6400.jpg"
+    },
+    {
+      "id": 13,
+      "brand": "Sony",
+      "title": "Sony ZV-E10",
+      "battery": "1628mAh",
+      "star": 4.8,
+      "reviews": 4023,
+      "description": "Sony ZV-E10 camera offering high-quality photography, advanced autofocus, and professional video capabilities.",
+      "reviewComments": [
+        "Great battery performance for long shoots.",
+        "Perfect for photography enthusiasts.",
+        "Image quality is excellent with sharp details."
+      ],
+      "image": "/product/Sony ZV-E10.jpg"
+    },
+    {
+      "id": 14,
+      "brand": "Fujifilm",
+      "title": "Fujifilm X-T5",
+      "battery": "1542mAh",
+      "star": 4.7,
+      "reviews": 2678,
+      "description": "Fujifilm X-T5 camera offering high-quality photography, advanced autofocus, and professional video capabilities.",
+      "reviewComments": [
+        "Solid build quality and premium feel.",
+        "Lightweight and easy to carry.",
+        "Great battery performance for long shoots."
+      ],
+      "image": "/product/Fujifilm x-t5.webp"
+    },
+    {
+      "id": 15,
+      "brand": "Fujifilm",
+      "title": "Fujifilm X-T4",
+      "battery": "803mAh",
+      "star": 5.0,
+      "reviews": 4007,
+      "description": "Fujifilm X-T4 camera offering high-quality photography, advanced autofocus, and professional video capabilities.",
+      "reviewComments": [
+        "Perfect for photography enthusiasts.",
+        "Lightweight and easy to carry.",
+        "Image quality is excellent with sharp details."
+      ],
+      "image": "/product/fujifilm x-t4.webp"
+    },
+    {
+      "id": 16,
+      "brand": "Fujifilm",
+      "title": "Fujifilm X-S20",
+      "battery": "1927mAh",
+      "star": 4.7,
+      "reviews": 1904,
+      "description": "Fujifilm X-S20 camera offering high-quality photography, advanced autofocus, and professional video capabilities.",
+      "reviewComments": [
+        "Image quality is excellent with sharp details.",
+        "Perfect for photography enthusiasts.",
+        "Solid build quality and premium feel."
+      ],
+      "image": "/product/Fujifilm x-s20.webp"
+    },
+    {
+      "id": 17,
+      "brand": "Fujifilm",
+      "title": "Fujifilm X100V",
+      "battery": "1653mAh",
+      "star": 4.4,
+      "reviews": 4185,
+      "description": "Fujifilm X100V camera offering high-quality photography, advanced autofocus, and professional video capabilities.",
+      "reviewComments": [
+        "Image quality is excellent with sharp details.",
+        "Solid build quality and premium feel.",
+        "Lightweight and easy to carry."
+      ],
+      "image": "/product/Fujifilm x100v.jpg"
+    },
+    {
+      "id": 18,
+      "brand": "Panasonic",
+      "title": "Panasonic Lumix GH6",
+      "battery": "1216mAh",
+      "star": 4.2,
+      "reviews": 3117,
+      "description": "Panasonic Lumix GH6 camera offering high-quality photography, advanced autofocus, and professional video capabilities.",
+      "reviewComments": [
+        "Great battery performance for long shoots.",
+        "Image quality is excellent with sharp details.",
+        "Perfect for photography enthusiasts."
+      ],
+      "image": "/product/Panasonic Lumix GH6.jpeg"
+    },
+    {
+      "id": 19,
+      "brand": "Panasonic",
+      "title": "Panasonic Lumix S5 II",
+      "battery": "2235mAh",
+      "star": 4.6,
+      "reviews": 2733,
+      "description": "Panasonic Lumix S5 II camera offering high-quality photography, advanced autofocus, and professional video capabilities.",
+      "reviewComments": [
+        "Image quality is excellent with sharp details.",
+        "Solid build quality and premium feel.",
+        "Perfect for photography enthusiasts."
+      ],
+      "image": "/product/Panasonic Lumix S5 II.jpeg"
+    },
+    {
+      "id": 20,
+      "brand": "Panasonic",
+      "title": "Panasonic Lumix G9",
+      "battery": "2118mAh",
+      "star": 4.6,
+      "reviews": 3288,
+      "description": "Panasonic Lumix G9 camera offering high-quality photography, advanced autofocus, and professional video capabilities.",
+      "reviewComments": [
+        "Lightweight and easy to carry.",
+        "Perfect for photography enthusiasts.",
+        "Image quality is excellent with sharp details."
+      ],
+      "image": "/product/Panasonic Lumix G9.webp"
+    },
+    {
+      "id": 21,
+      "brand": "Olympus",
+      "title": "Olympus OM-D E-M10 Mark IV",
+      "battery": "2468mAh",
+      "star": 4.2,
+      "reviews": 3262,
+      "description": "Olympus OM-D E-M10 Mark IV camera offering high-quality photography, advanced autofocus, and professional video capabilities.",
+      "reviewComments": [
+        "Image quality is excellent with sharp details.",
+        "Solid build quality and premium feel.",
+        "Great battery performance for long shoots."
+      ],
+      "image": "/product/Olympus OM-D E-M10 Mark IV.jpeg"
+    },
+    {
+      "id": 22,
+      "brand": "OM System",
+      "title": "OM System OM-1",
+      "battery": "1156mAh",
+      "star": 4.7,
+      "reviews": 4389,
+      "description": "OM System OM-1 camera offering high-quality photography, advanced autofocus, and professional video capabilities.",
+      "reviewComments": [
+        "Perfect for photography enthusiasts.",
+        "Solid build quality and premium feel.",
+        "Great battery performance for long shoots."
+      ],
+      "image": "/product/OM System OM-1.webp"
+    },
+    {
+      "id": 23,
+      "brand": "Leica",
+      "title": "Leica Q3",
+      "battery": "1155mAh",
+      "star": 4.8,
+      "reviews": 3895,
+      "description": "Leica Q3 camera offering high-quality photography, advanced autofocus, and professional video capabilities.",
+      "reviewComments": [
+        "Solid build quality and premium feel.",
+        "Perfect for photography enthusiasts.",
+        "Great battery performance for long shoots."
+      ],
+      "image": "/product/leica q3.jpg"
+    },
+    {
+      "id": 24,
+      "brand": "Leica",
+      "title": "Leica SL2",
+      "battery": "2478mAh",
+      "star": 4.2,
+      "reviews": 3127,
+      "description": "Leica SL2 camera offering high-quality photography, advanced autofocus, and professional video capabilities.",
+      "reviewComments": [
+        "Image quality is excellent with sharp details.",
+        "Solid build quality and premium feel.",
+        "Great battery performance for long shoots."
+      ],
+      "image": "/product/leica sl2.jpeg"
+    },
+    {
+      "id": 25,
+      "brand": "Pentax",
+      "title": "Pentax K-1 Mark II",
+      "battery": "1817mAh",
+      "star": 4.3,
+      "reviews": 2489,
+      "description": "Pentax K-1 Mark II camera offering high-quality photography, advanced autofocus, and professional video capabilities.",
+      "reviewComments": [
+        "Great battery performance for long shoots.",
+        "Lightweight and easy to carry.",
+        "Solid build quality and premium feel."
+      ],
+      "image": "/product/Pentax K-1 Mark II.jpeg"
+    },
+    {
+      "id": 26,
+      "brand": "Pentax",
+      "title": "Pentax KP",
+      "battery": "844mAh",
+      "star": 4.0,
+      "reviews": 644,
+      "description": "Pentax KP camera offering high-quality photography, advanced autofocus, and professional video capabilities.",
+      "reviewComments": [
+        "Solid build quality and premium feel.",
+        "Image quality is excellent with sharp details.",
+        "Perfect for photography enthusiasts."
+      ],
+      "image": "/product/Pentax KP.jpg"
+    },
+    {
+      "id": 27,
+      "brand": "GoPro",
+      "title": "GoPro Hero 12 Black",
+      "battery": "1823mAh",
+      "star": 5.0,
+      "reviews": 650,
+      "description": "GoPro Hero 12 Black camera offering high-quality photography, advanced autofocus, and professional video capabilities.",
+      "reviewComments": [
+        "Lightweight and easy to carry.",
+        "Image quality is excellent with sharp details.",
+        "Solid build quality and premium feel."
+      ],
+      "image": "/product/gopro hero 12.webp"
+    },
+    {
+      "id": 28,
+      "brand": "GoPro",
+      "title": "GoPro Hero 11 Black",
+      "battery": "1244mAh",
+      "star": 4.1,
+      "reviews": 3486,
+      "description": "GoPro Hero 11 Black camera offering high-quality photography, advanced autofocus, and professional video capabilities.",
+      "reviewComments": [
+        "Image quality is excellent with sharp details.",
+        "Perfect for photography enthusiasts.",
+        "Lightweight and easy to carry."
+      ],
+      "image": "/product/gopro hero 11.webp"
+    },
+    {
+      "id": 29,
+      "brand": "DJI",
+      "title": "DJI Osmo Action 4",
+      "battery": "1499mAh",
+      "star": 4.8,
+      "reviews": 3631,
+      "description": "DJI Osmo Action 4 camera offering high-quality photography, advanced autofocus, and professional video capabilities.",
+      "reviewComments": [
+        "Great battery performance for long shoots.",
+        "Lightweight and easy to carry.",
+        "Solid build quality and premium feel."
+      ],
+      "image": "/product/dji osmo action 4.jpg"
+    },
+    {
+      "id": 30,
+      "brand": "DJI",
+      "title": "DJI Pocket 3",
+      "battery": "1477mAh",
+      "star": 4.0,
+      "reviews": 2214,
+      "description": "DJI Pocket 3 camera offering high-quality photography, advanced autofocus, and professional video capabilities.",
+      "reviewComments": [
+        "Great battery performance for long shoots.",
+        "Image quality is excellent with sharp details.",
+        "Lightweight and easy to carry."
+      ],
+      "image": "/product/dji pocket 3.webp"
+    },
+    {
+      "id": 31,
+      "brand": "Blackmagic",
+      "title": "Blackmagic Pocket Cinema Camera 6K",
+      "battery": "1963mAh",
+      "star": 4.1,
+      "reviews": 2464,
+      "description": "Blackmagic Pocket Cinema Camera 6K camera offering high-quality photography, advanced autofocus, and professional video capabilities.",
+      "reviewComments": [
+        "Great battery performance for long shoots.",
+        "Perfect for photography enthusiasts.",
+        "Image quality is excellent with sharp details."
+      ],
+      "image": "/product/blackmagic pocket cinema camera 6k.webp"
+    },
+    {
+      "id": 32,
+      "brand": "Red",
+      "title": "Red Komodo 6K",
+      "battery": "1364mAh",
+      "star": 4.3,
+      "reviews": 812,
+      "description": "Red Komodo 6K camera offering high-quality photography, advanced autofocus, and professional video capabilities.",
+      "reviewComments": [
+        "Lightweight and easy to carry.",
+        "Image quality is excellent with sharp details.",
+        "Solid build quality and premium feel."
+      ],
+      "image": "/product/Red Komodo 6K.jpeg"
+    },
+    {
+      "id": 33,
+      "brand": "Kodak",
+      "title": "Kodak PixPro AZ528",
+      "battery": "1369mAh",
+      "star": 4.3,
+      "reviews": 3394,
+      "description": "Kodak PixPro AZ528 camera offering high-quality photography, advanced autofocus, and professional video capabilities.",
+      "reviewComments": [
+        "Perfect for photography enthusiasts.",
+        "Great battery performance for long shoots.",
+        "Lightweight and easy to carry."
+      ],
+      "image": "/product/kodak pixpro az528.jpg"
+    },
+    {
+      "id": 34,
+      "brand": "Ricoh",
+      "title": "Ricoh GR IIIx",
+      "battery": "2174mAh",
+      "star": 4.9,
+      "reviews": 1371,
+      "description": "Ricoh GR IIIx camera offering high-quality photography, advanced autofocus, and professional video capabilities.",
+      "reviewComments": [
+        "Great battery performance for long shoots.",
+        "Lightweight and easy to carry.",
+        "Perfect for photography enthusiasts."
+      ],
+      "image": "/product/Ricoh GR IIIx.avif"
+    },
+    {
+      "id": 35,
+      "brand": "Hasselblad",
+      "title": "Hasselblad X2D 100C",
+      "battery": "1465mAh",
+      "star": 4.9,
+      "reviews": 2545,
+      "description": "Hasselblad X2D 100C camera offering high-quality photography, advanced autofocus, and professional video capabilities.",
+      "reviewComments": [
+        "Great battery performance for long shoots.",
+        "Perfect for photography enthusiasts.",
+        "Solid build quality and premium feel."
+      ],
+      "image": "/product/hasselblad x2d 100c.webp"
+    },
+    {
+      "id": 36,
+      "brand": "Sigma",
+      "title": "Sigma fp L",
+      "battery": "1367mAh",
+      "star": 4.8,
+      "reviews": 2703,
+      "description": "Sigma fp L camera offering high-quality photography, advanced autofocus, and professional video capabilities.",
+      "reviewComments": [
+        "Perfect for photography enthusiasts.",
+        "Image quality is excellent with sharp details.",
+        "Lightweight and easy to carry."
+      ],
+      "image": "/product/Sigma fp L.jpeg"
+    },
+    {
+      "id": 37,
+      "brand": "Casio",
+      "title": "Casio Exilim EX-ZR3600",
+      "battery": "804mAh",
+      "star": 4.5,
+      "reviews": 4863,
+      "description": "Casio Exilim EX-ZR3600 camera offering high-quality photography, advanced autofocus, and professional video capabilities.",
+      "reviewComments": [
+        "Solid build quality and premium feel.",
+        "Perfect for photography enthusiasts.",
+        "Great battery performance for long shoots."
+      ],
+      "image": "/product/casio exilim ex-zr3600.jpeg"
+    },
+    {
+      "id": 38,
+      "brand": "Minolta",
+      "title": "Minolta MN67Z",
+      "battery": "1155mAh",
+      "star": 4.0,
+      "reviews": 2784,
+      "description": "Minolta MN67Z camera offering high-quality photography, advanced autofocus, and professional video capabilities.",
+      "reviewComments": [
+        "Image quality is excellent with sharp details.",
+        "Perfect for photography enthusiasts.",
+        "Great battery performance for long shoots."
+      ],
+      "image": "/product/Minolta MN67Z.jpg"
+    },
+    {
+      "id": 39,
+      "brand": "YI",
+      "title": "YI 4K Action Camera",
+      "battery": "1557mAh",
+      "star": 4.4,
+      "reviews": 3701,
+      "description": "YI 4K Action Camera camera offering high-quality photography, advanced autofocus, and professional video capabilities.",
+      "reviewComments": [
+        "Perfect for photography enthusiasts.",
+        "Image quality is excellent with sharp details.",
+        "Lightweight and easy to carry."
+      ],
+      "image": "/product/YI 4K Action Camera.jpg"
+    },
+    {
+      "id": 40,
+      "brand": "Insta360",
+      "title": "Insta360 X3",
+      "battery": "1900mAh",
+      "star": 4.7,
+      "reviews": 4589,
+      "description": "Insta360 X3 camera offering high-quality photography, advanced autofocus, and professional video capabilities.",
+      "reviewComments": [
+        "Solid build quality and premium feel.",
+        "Lightweight and easy to carry.",
+        "Great battery performance for long shoots."
+      ],
+      "image": "/product/insta360 x3.webp"
+    },
+    {
+      "id": 41,
+      "brand": "Insta360",
+      "title": "Insta360 One RS",
+      "battery": "2456mAh",
+      "star": 4.4,
+      "reviews": 787,
+      "description": "Insta360 One RS camera offering high-quality photography, advanced autofocus, and professional video capabilities.",
+      "reviewComments": [
+        "Perfect for photography enthusiasts.",
+        "Lightweight and easy to carry.",
+        "Great battery performance for long shoots."
+      ],
+      "image": "/product/insta360 one rs.webp"
+    },
+    {
+      "id": 42,
+      "brand": "Akaso",
+      "title": "Akaso Brave 7 LE",
+      "battery": "877mAh",
+      "star": 4.8,
+      "reviews": 1498,
+      "description": "Akaso Brave 7 LE camera offering high-quality photography, advanced autofocus, and professional video capabilities.",
+      "reviewComments": [
+        "Great battery performance for long shoots.",
+        "Perfect for photography enthusiasts.",
+        "Lightweight and easy to carry."
+      ],
+      "image": "/product/akaso brave 7 le.webp"
+    },
+    {
+      "id": 43,
+      "brand": "VTech",
+      "title": "VTech Kidizoom Duo",
+      "battery": "2078mAh",
+      "star": 4.4,
+      "reviews": 1318,
+      "description": "VTech Kidizoom Duo camera offering high-quality photography, advanced autofocus, and professional video capabilities.",
+      "reviewComments": [
+        "Lightweight and easy to carry.",
+        "Great battery performance for long shoots.",
+        "Image quality is excellent with sharp details."
+      ],
+      "image": "/product/VTech Kidizoom Duo.jpeg"
+    },
+    {
+      "id": 44,
+      "brand": "Polaroid",
+      "title": "Polaroid Now+",
+      "battery": "1995mAh",
+      "star": 4.1,
+      "reviews": 565,
+      "description": "Polaroid Now+ camera offering high-quality photography, advanced autofocus, and professional video capabilities.",
+      "reviewComments": [
+        "Perfect for photography enthusiasts.",
+        "Image quality is excellent with sharp details.",
+        "Great battery performance for long shoots."
+      ],
+      "image": "/product/Polaroid Now+.avif"
+    },
+    {
+      "id": 45,
+      "brand": "Lomography",
+      "title": "Lomography Lomo'Instant",
+      "battery": "1483mAh",
+      "star": 4.7,
+      "reviews": 1279,
+      "description": "Lomography Lomo'Instant camera offering high-quality photography, advanced autofocus, and professional video capabilities.",
+      "reviewComments": [
+        "Great battery performance for long shoots.",
+        "Image quality is excellent with sharp details.",
+        "Solid build quality and premium feel."
+      ],
+      "image": "/product/Lomography Lomo'Instant.jpeg"
+    }
+  ]
+}
