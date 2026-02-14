@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export function Playstation() {
   return (
@@ -84,12 +85,14 @@ export function Playstation() {
               <p className="text-sm text-gray-500 mt-2 mb-6">
                 The new 15-inch MacBook Air makes room for more of what you love with a spacious Liquid Retina display.
               </p>
+             <Link href="/computers">
               <Button
                 variant="outline"
                 className="border-black bg-transparent text-black hover:bg-black hover:text-white transition-all duration-300 px-12 py-5 rounded-md w-full max-w-50"
               >
                 Shop Now
               </Button>
+             </Link>
             </div>
           </div>
         </div>
@@ -192,12 +195,14 @@ export function Playstation() {
               <p className="text-base text-gray-500 max-w-90 mb-6">
                 The new 15-inch MacBook Air makes room for more of what you love with a spacious Liquid Retina display.
               </p>
+             <Link href="/computers">
               <Button
                 variant="outline"
                 className="border-black cursor-pointer bg-transparent text-black hover:bg-black hover:text-white transition-all duration-300 px-8 py-5 rounded-md"
               >
                 Shop Now
               </Button>
+             </Link>
             </div>
             {/* Background Image */}
             <div className="absolute my-7 right-0 w-3/4 h-3/4">

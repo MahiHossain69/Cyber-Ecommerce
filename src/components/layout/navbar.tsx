@@ -101,7 +101,7 @@ export function Navbar() {
               <Button
                 variant="ghost"
                 size="icon-sm"
-                className="hidden sm:inline-flex transition-transform hover:scale-110 active:scale-95"
+                className="hidden cursor-pointer sm:inline-flex transition-transform hover:scale-110 active:scale-95"
                 aria-label="Wishlist"
               >
                 <Heart className="h-5 w-5" />
@@ -111,7 +111,7 @@ export function Navbar() {
               <Button
                 variant="ghost"
                 size="icon-sm"
-                className="transition-transform hover:scale-110 active:scale-95"
+                className="transition-transform cursor-pointer hover:scale-110 active:scale-95"
                 aria-label="Shopping Cart"
               >
                 <ShoppingCart className="h-5 w-5" />
@@ -121,7 +121,7 @@ export function Navbar() {
               <Button
                 variant="ghost"
                 size="icon-sm"
-                className="transition-transform hover:scale-110 active:scale-95"
+                className="transition-transform cursor-pointer hover:scale-110 active:scale-95"
                 aria-label="User Account"
               >
                 <User className="h-5 w-5" />
