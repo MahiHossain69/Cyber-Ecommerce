@@ -6,6 +6,8 @@ import { Heart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
+import { useWishlist } from "@/contexts/wishlist-context";
+import { toast } from "sonner";
 
 interface Product {
   id: number;
@@ -27,9 +29,9 @@ const tabs = ["New Arrival", "Bestseller", "Featured Products"];
 
 export function NewArrival() {
   const [activeTab, setActiveTab] = useState("New Arrival");
-  const [likedProducts, setLikedProducts] = useState<number[]>([]);
   const [allProducts, setAllProducts] = useState<Product[]>([]);
   const [loading, setLoading] = useState(true);
+  const { addToWishlist, removeFromWishlist, isInWishlist } = useWishlist();
 
   useEffect(() => {
     // Fetch products from new API
@@ -47,12 +49,27 @@ export function NewArrival() {
       });
   }, []);
 
-  const toggleLike = (productId: number) => {
-    setLikedProducts((prev) =>
-      prev.includes(productId)
-        ? prev.filter((id) => id !== productId)
-        : [...prev, productId]
-    );
+  const toggleWishlist = (e: React.MouseEvent, product: Product) => {
+    e.preventDefault();
+    e.stopPropagation();
+    
+    if (isInWishlist(product.id)) {
+      removeFromWishlist(product.id);
+      toast.success("Removed from wishlist", {
+        description: `${product.name} has been removed from your wishlist.`,
+      });
+    } else {
+      addToWishlist({
+        id: product.id,
+        title: product.name,
+        price: product.price,
+        image: product.image,
+        category: getCategoryLink(product.category).replace('/', ''),
+      });
+      toast.success("Added to wishlist!", {
+        description: `${product.name} has been added to your wishlist.`,
+      });
+    }
   };
 
   // Filter products based on active tab
@@ -136,14 +153,14 @@ export function NewArrival() {
                 <Button
                   variant="ghost"
                   size="icon"
-                  onClick={() => toggleLike(product.id)}
+                  onClick={(e) => toggleWishlist(e, product)}
                   className="absolute top-4 right-4 z-10 w-9 h-9 rounded-full bg-black hover:bg-gray-400 transition-all duration-500 ease-in-out cursor-pointer"
                   aria-label="Add to wishlist"
                 >
                   <Heart
                     className={cn(
                       "w-5 h-5 transition-all",
-                      likedProducts.includes(product.id)
+                      isInWishlist(product.id)
                         ? "fill-red-500 text-red-500"
                         : "text-gray-300 hover:text-gray-400"
                     )}

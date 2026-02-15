@@ -8,6 +8,8 @@ import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { Input } from "../ui/input";
 import { Textarea } from "../ui/textarea";
+import { useWishlist } from "@/contexts/wishlist-context";
+import { toast } from "sonner";
 
 interface GenericProduct {
   id: number;
@@ -60,7 +62,6 @@ export function GenericProductDetails({ productId, category, apiPath }: GenericP
   const [product, setProduct] = useState<GenericProduct | null>(null);
   const [relatedProducts, setRelatedProducts] = useState<GenericProduct[]>([]);
   const [loading, setLoading] = useState(true);
-  const [isLiked, setIsLiked] = useState(false);
   const [selectedImage, setSelectedImage] = useState(0);
   const [selectedStorage, setSelectedStorage] = useState("256GB");
   const [selectedColor, setSelectedColor] = useState(0);
@@ -70,7 +71,28 @@ export function GenericProductDetails({ productId, category, apiPath }: GenericP
   const [commentImages, setCommentImages] = useState<string[]>([]);
   const [hoverRating, setHoverRating] = useState(0);
 
+  const { addToWishlist, isInWishlist } = useWishlist();
   const fileInputRef = useRef<HTMLInputElement>(null);
+
+  const handleWishlistToggle = () => {
+    if (product) {
+      const productName = product.title || product.name || product.model || "Product";
+      if (isInWishlist(product.id)) {
+        toast.info("Already in wishlist");
+      } else {
+        addToWishlist({
+          id: product.id,
+          title: product.brand ? `${product.brand} ${productName}` : productName,
+          price: product.price || 0,
+          image: product.image,
+          category,
+        });
+        toast.success("Added to wishlist!", {
+          description: `${product.brand ? `${product.brand} ` : ""}${productName} has been added to your wishlist.`,
+        });
+      }
+    }
+  };
 
   useEffect(() => {
     fetch(apiPath)
@@ -382,13 +404,13 @@ export function GenericProductDetails({ productId, category, apiPath }: GenericP
             <div className="flex gap-4">
               <Button 
                 variant="outline"
-                onClick={() => setIsLiked(!isLiked)}
+                onClick={handleWishlistToggle}
                 className="flex-1 h-14 text-base font-medium rounded-lg border-2 border-gray-300 cursor-pointer hover:border-black"
               >
                 <Heart
                   className={cn(
                     "w-5 h-5 mr-2 transition-all",
-                    isLiked ? "fill-red-500 text-red-500" : "text-gray-600"
+                    isInWishlist(product.id) ? "fill-red-500 text-red-500" : "text-gray-600"
                   )}
                 />
                 Add to Wishlist

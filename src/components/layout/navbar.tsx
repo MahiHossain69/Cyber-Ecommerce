@@ -7,10 +7,12 @@ import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import { Input } from "../ui/input";
+import { useWishlist } from "@/contexts/wishlist-context";
 
 export function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [mobileSearchOpen, setMobileSearchOpen] = useState(false);
+  const { wishlistCount } = useWishlist();
 
   // Prevent body scroll when mobile menu is open
   useEffect(() => {
@@ -101,10 +103,18 @@ export function Navbar() {
               <Button
                 variant="ghost"
                 size="icon-sm"
-                className="hidden cursor-pointer sm:inline-flex transition-transform hover:scale-110 active:scale-95"
+                className="hidden cursor-pointer sm:inline-flex transition-transform hover:scale-110 active:scale-95 relative"
                 aria-label="Wishlist"
+                asChild
               >
-                <Heart className="h-5 w-5" />
+                <Link href="/wishlist">
+                  <Heart className="h-5 w-5" />
+                  {wishlistCount > 0 && (
+                    <span className="absolute -top-1 -right-1 bg-red-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center font-semibold">
+                      {wishlistCount}
+                    </span>
+                  )}
+                </Link>
               </Button>
 
               {/* Cart */}
@@ -212,11 +222,16 @@ export function Navbar() {
             <div className="mt-4 border-t border-border pt-4 sm:hidden">
               <Link
                 href="/wishlist"
-                className="flex items-center gap-3 rounded-md px-3 py-2.5 text-sm font-medium text-muted-foreground transition-all duration-200 hover:bg-muted/50 hover:text-foreground"
+                className="flex items-center gap-3 rounded-md px-3 py-2.5 text-sm font-medium text-muted-foreground transition-all duration-200 hover:bg-muted/50 hover:text-foreground relative"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 <Heart className="h-5 w-5" />
                 <span>Wishlist</span>
+                {wishlistCount > 0 && (
+                  <span className="ml-auto bg-red-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center font-semibold">
+                    {wishlistCount}
+                  </span>
+                )}
               </Link>
             </div>
           </div>

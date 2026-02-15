@@ -8,6 +8,8 @@ import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import { useWishlist } from "@/contexts/wishlist-context";
+import { toast } from "sonner";
 
 interface Smartwatch {
   id: number;
@@ -54,7 +56,6 @@ export function ProductDetails({ productId }: ProductDetailsProps) {
   const [product, setProduct] = useState<Smartwatch | null>(null);
   const [relatedProducts, setRelatedProducts] = useState<Smartwatch[]>([]);
   const [loading, setLoading] = useState(true);
-  const [isLiked, setIsLiked] = useState(false);
   const [selectedImage, setSelectedImage] = useState(0);
   const [selectedStorage, setSelectedStorage] = useState("256GB");
   const [selectedColor, setSelectedColor] = useState(0);
@@ -64,7 +65,27 @@ export function ProductDetails({ productId }: ProductDetailsProps) {
   const [commentImages, setCommentImages] = useState<string[]>([]);
   const [hoverRating, setHoverRating] = useState(0);
 
+  const { addToWishlist, isInWishlist } = useWishlist();
   const fileInputRef = useRef<HTMLInputElement>(null);
+
+  const handleWishlistToggle = () => {
+    if (product) {
+      if (isInWishlist(product.id)) {
+        toast.info("Already in wishlist");
+      } else {
+        addToWishlist({
+          id: product.id,
+          title: `${product.brand} ${product.title}`,
+          price: product.price || 0,
+          image: product.image,
+          category: "smartwatches",
+        });
+        toast.success("Added to wishlist!", {
+          description: `${product.brand} ${product.title} has been added to your wishlist.`,
+        });
+      }
+    }
+  };
 
   useEffect(() => {
     fetch("/api/smartwatch_api_77_unique.json")
@@ -370,13 +391,13 @@ export function ProductDetails({ productId }: ProductDetailsProps) {
             <div className="flex gap-4">
               <Button 
                 variant="outline"
-                onClick={() => setIsLiked(!isLiked)}
+                onClick={handleWishlistToggle}
                 className="flex-1 cursor-pointer h-14 text-base font-medium rounded-lg border-2 border-gray-300 hover:border-black"
               >
                 <Heart
                   className={cn(
                     "w-5 h-5 mr-2 transition-all",
-                    isLiked ? "fill-red-500 text-red-500" : "text-gray-600"
+                    isInWishlist(product.id) ? "fill-red-500 text-red-500" : "text-gray-600"
                   )}
                 />
                 Add to Wishlist
