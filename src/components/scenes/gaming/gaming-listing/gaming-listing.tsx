@@ -247,6 +247,7 @@ export function GamingListing() {
               products={productsForGrid}
               totalCount={sortedItems.length}
               onSortChange={setSortBy}
+              categoryPath="gaming"
             />
             <ProductPagination
               currentPage={currentPage}

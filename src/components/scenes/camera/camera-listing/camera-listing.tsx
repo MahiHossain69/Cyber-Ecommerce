@@ -220,6 +220,7 @@ export function CameraListing() {
               products={productsForGrid}
               totalCount={sortedCameras.length}
               onSortChange={setSortBy}
+              categoryPath="cameras"
             />
             <ProductPagination
               currentPage={currentPage}

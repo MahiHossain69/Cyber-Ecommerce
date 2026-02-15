@@ -211,6 +211,7 @@ export function SmartwatchListing() {
               products={productsForGrid}
               totalCount={sortedWatches.length}
               onSortChange={setSortBy}
+              categoryPath="smartwatches"
             />
             <ProductPagination
               currentPage={currentPage}

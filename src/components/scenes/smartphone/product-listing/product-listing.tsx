@@ -219,6 +219,7 @@ export function ProductListing() {
               products={productsForGrid}
               totalCount={sortedPhones.length}
               onSortChange={setSortBy}
+              categoryPath="smartphones"
             />
             <ProductPagination
               currentPage={currentPage}

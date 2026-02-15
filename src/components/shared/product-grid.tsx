@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { Heart, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
@@ -22,15 +23,17 @@ export interface Product {
   reviews: number;
   image: string;
   price?: number;
+  category?: string;
 }
 
 interface ProductGridProps {
   products: Product[];
   totalCount: number;
   onSortChange: (sortBy: string) => void;
+  categoryPath?: string;
 }
 
-export function ProductGrid({ products, totalCount, onSortChange }: ProductGridProps) {
+export function ProductGrid({ products, totalCount, onSortChange, categoryPath = "smartwatches" }: ProductGridProps) {
   const [sortBy, setSortBy] = useState("rating");
   const [likedProducts, setLikedProducts] = useState<number[]>([]);
 
@@ -73,16 +76,20 @@ export function ProductGrid({ products, totalCount, onSortChange }: ProductGridP
         {products.map((product) => {
           const displayName = product.title || product.name || "";
           return (
-            <div
+            <Link
               key={product.id}
-              className="bg-gray-100 rounded-lg overflow-hidden flex flex-col"
+              href={`/${categoryPath}/${product.id}`}
+              className="bg-gray-100 rounded-lg overflow-hidden flex flex-col group"
             >
               {/* Product Image */}
               <div className="relative aspect-square bg-gray-100 p-8">
                 <Button
                   variant="ghost"
                   size="icon"
-                  onClick={() => toggleLike(product.id)}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    toggleLike(product.id);
+                  }}
                   className="absolute top-4 right-4 z-10 w-9 h-9 rounded-full bg-black cursor-pointer hover:bg-gray-400 transition-colors"
                   aria-label="Add to wishlist"
                 >
@@ -100,7 +107,7 @@ export function ProductGrid({ products, totalCount, onSortChange }: ProductGridP
                     src={product.image}
                     alt={displayName}
                     fill
-                    className="object-contain"
+                    className="object-contain group-hover:scale-105 transition-transform"
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   />
                 </div>
@@ -124,11 +131,14 @@ export function ProductGrid({ products, totalCount, onSortChange }: ProductGridP
                 <p className="text-2xl font-semibold text-black">
                   ${product.price || 299}
                 </p>
-                <Button className="w-full bg-black text-white hover:bg-gray-900 cursor-pointer rounded-lg h-12 text-sm font-medium transition-colors">
+                <Button 
+                  onClick={(e) => e.preventDefault()}
+                  className="w-full bg-black text-white hover:bg-gray-900 cursor-pointer rounded-lg h-12 text-sm font-medium transition-colors"
+                >
                   Buy Now
                 </Button>
               </div>
-            </div>
+            </Link>
           );
         })}
       </div>

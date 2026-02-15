@@ -229,6 +229,7 @@ export function HeadphoneListing() {
               products={productsForGrid}
               totalCount={sortedHeadphones.length}
               onSortChange={setSortBy}
+              categoryPath="headphones"
             />
             <ProductPagination
               currentPage={currentPage}

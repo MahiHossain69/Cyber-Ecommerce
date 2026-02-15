@@ -233,6 +233,7 @@ export function ComputerListing() {
               products={productsForGrid}
               totalCount={sortedComputers.length}
               onSortChange={setSortBy}
+              categoryPath="computers"
             />
             <ProductPagination
               currentPage={currentPage}
