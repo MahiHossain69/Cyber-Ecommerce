@@ -45,19 +45,12 @@ This project demonstrates strong frontend architecture, reusable components, and
 Cyber-Ecommerce/
 │
 ├── app/ or pages/ # Application routes
-
 ├── components/ # Reusable UI components
-
 ├── data/ # Static product data / APIs
-
 ├── public/ # Static assets
-
 ├── styles/ # Global styles
-
 ├── package.json # Dependencies & scripts
-
 ├── tsconfig.json # TypeScript configuration
-
 └── README.md # Documentation
 
 
