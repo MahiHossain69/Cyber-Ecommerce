@@ -7,6 +7,7 @@ import { Heart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { useWishlist } from "@/contexts/wishlist-context";
+import { useCart } from "@/contexts/cart-context";
 import { toast } from "sonner";
 
 const discountProducts = [
@@ -42,6 +43,7 @@ const discountProducts = [
 
 export function Discount() {
   const { addToWishlist, removeFromWishlist, isInWishlist } = useWishlist();
+  const { addToCart } = useCart();
 
   const toggleWishlist = (e: React.MouseEvent, product: typeof discountProducts[0]) => {
     e.preventDefault();
@@ -64,6 +66,22 @@ export function Discount() {
         description: `${product.name} has been added to your wishlist.`,
       });
     }
+  };
+
+  const handleBuyNow = (e: React.MouseEvent, product: typeof discountProducts[0]) => {
+    e.preventDefault();
+    e.stopPropagation();
+    
+    addToCart({
+      id: product.id,
+      title: product.name,
+      price: product.price,
+      image: product.image,
+      category: getCategoryLink(product.category).replace('/', ''),
+    });
+    toast.success("Added to cart!", {
+      description: `${product.name} has been added to your cart.`,
+    });
   };
 
   // Get category link based on product category
@@ -132,7 +150,10 @@ export function Discount() {
                   ${product.price}
                 </p>
                 <Link href={getCategoryLink(product.category)}>
-                  <Button className="w-full bg-black text-white hover:bg-gray-900 cursor-pointer rounded-lg h-12 text-sm font-medium transition-colors">
+                  <Button 
+                    onClick={(e) => handleBuyNow(e, product)}
+                    className="w-full bg-black text-white hover:bg-gray-900 cursor-pointer rounded-lg h-12 text-sm font-medium transition-colors"
+                  >
                     Buy Now
                   </Button>
                 </Link>

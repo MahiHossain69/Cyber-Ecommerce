@@ -9,6 +9,7 @@ import { cn } from "@/lib/utils";
 import { Textarea } from "@/components/ui/textarea";
 import { Input } from "@/components/ui/input";
 import { useWishlist } from "@/contexts/wishlist-context";
+import { useCart } from "@/contexts/cart-context";
 import { toast } from "sonner";
 
 interface Phone {
@@ -68,6 +69,7 @@ export function ProductDetails({ productId }: ProductDetailsProps) {
   const [hoverRating, setHoverRating] = useState(0);
 
   const { addToWishlist, isInWishlist } = useWishlist();
+  const { addToCart } = useCart();
   const fileInputRef = useRef<HTMLInputElement>(null);
 
   const handleWishlistToggle = () => {
@@ -86,6 +88,23 @@ export function ProductDetails({ productId }: ProductDetailsProps) {
           description: `${product.brand} ${product.model} has been added to your wishlist.`,
         });
       }
+    }
+  };
+
+  const handleAddToCart = () => {
+    if (product) {
+      addToCart({
+        id: product.id,
+        title: `${product.brand} ${product.model}`,
+        price: product.price,
+        image: product.image,
+        category: "smartphones",
+        selectedStorage,
+        selectedColor: colors[selectedColor],
+      });
+      toast.success("Added to cart!", {
+        description: `${product.brand} ${product.model} has been added to your cart.`,
+      });
     }
   };
 
@@ -403,8 +422,11 @@ export function ProductDetails({ productId }: ProductDetailsProps) {
                 />
                 Add to Wishlist
               </Button>
-              <Button className="flex-1 cursor-pointer bg-black text-white hover:bg-gray-900 h-14 text-base font-medium rounded-lg">
-                Add to Card
+              <Button 
+                onClick={handleAddToCart}
+                className="flex-1 cursor-pointer bg-black text-white hover:bg-gray-900 h-14 text-base font-medium rounded-lg"
+              >
+                Add to Cart
               </Button>
             </div>
 

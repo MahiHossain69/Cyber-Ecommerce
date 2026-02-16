@@ -14,6 +14,7 @@ import {
 } from "@/components/ui/select";
 import { cn } from "@/lib/utils";
 import { useWishlist } from "@/contexts/wishlist-context";
+import { useCart } from "@/contexts/cart-context";
 import { toast } from "sonner";
 
 export interface Product {
@@ -38,6 +39,7 @@ interface ProductGridProps {
 export function ProductGrid({ products, totalCount, onSortChange, categoryPath = "smartwatches" }: ProductGridProps) {
   const [sortBy, setSortBy] = useState("rating");
   const { addToWishlist, removeFromWishlist, isInWishlist } = useWishlist();
+  const { addToCart } = useCart();
 
   const handleSortChange = (value: string) => {
     setSortBy(value);
@@ -68,6 +70,25 @@ export function ProductGrid({ products, totalCount, onSortChange, categoryPath =
         description: `${productTitle} has been added to your wishlist.`,
       });
     }
+  };
+
+  const handleBuyNow = (e: React.MouseEvent, product: Product) => {
+    e.preventDefault();
+    e.stopPropagation();
+    
+    const displayName = product.title || product.name || "";
+    const productTitle = `${product.brand} ${displayName}`;
+    
+    addToCart({
+      id: product.id,
+      title: productTitle,
+      price: product.price || 299,
+      image: product.image,
+      category: categoryPath,
+    });
+    toast.success("Added to cart!", {
+      description: `${productTitle} has been added to your cart.`,
+    });
   };
 
   return (
@@ -149,7 +170,7 @@ export function ProductGrid({ products, totalCount, onSortChange, categoryPath =
                   ${product.price || 299}
                 </p>
                 <Button 
-                  onClick={(e) => e.preventDefault()}
+                  onClick={(e) => handleBuyNow(e, product)}
                   className="w-full bg-black text-white hover:bg-gray-900 cursor-pointer rounded-lg h-12 text-sm font-medium transition-colors"
                 >
                   Buy Now

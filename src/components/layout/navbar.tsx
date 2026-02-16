@@ -2,17 +2,29 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { Search, Heart, ShoppingCart, User, Menu, X } from "lucide-react";
+import { Search, Heart, ShoppingCart, User, Menu, X, LogOut, Settings, Package, UserCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import { Input } from "../ui/input";
 import { useWishlist } from "@/contexts/wishlist-context";
+import { useCart } from "@/contexts/cart-context";
+import { useAuth } from "@/contexts/auth-context";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 
 export function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [mobileSearchOpen, setMobileSearchOpen] = useState(false);
   const { wishlistCount } = useWishlist();
+  const { cartCount } = useCart();
+  const { user, isAuthenticated, logout } = useAuth();
 
   // Prevent body scroll when mobile menu is open
   useEffect(() => {
@@ -121,21 +133,105 @@ export function Navbar() {
               <Button
                 variant="ghost"
                 size="icon-sm"
-                className="transition-transform cursor-pointer hover:scale-110 active:scale-95"
+                className="transition-transform cursor-pointer hover:scale-110 active:scale-95 relative"
                 aria-label="Shopping Cart"
+                asChild
               >
-                <ShoppingCart className="h-5 w-5" />
+                <Link href="/cart">
+                  <ShoppingCart className="h-5 w-5" />
+                  {cartCount > 0 && (
+                    <span className="absolute -top-1 -right-1 bg-red-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center font-semibold">
+                      {cartCount}
+                    </span>
+                  )}
+                </Link>
               </Button>
 
-              {/* User */}
-              <Button
-                variant="ghost"
-                size="icon-sm"
-                className="transition-transform cursor-pointer hover:scale-110 active:scale-95"
-                aria-label="User Account"
-              >
-                <User className="h-5 w-5" />
-              </Button>
+              {/* User Dropdown */}
+              {isAuthenticated ? (
+                <DropdownMenu>
+                  <DropdownMenuTrigger asChild>
+                    <Button
+                      variant="ghost"
+                      size="icon-sm"
+                      className="transition-transform cursor-pointer hover:scale-110 active:scale-95 relative rounded-full"
+                      aria-label="User Account"
+                    >
+                      <div className="relative w-8 h-8 rounded-full overflow-hidden bg-gray-200 flex items-center justify-center">
+                        <Image 
+                          src={user?.avatar || "https://i.pravatar.cc/150?img=12"} 
+                          alt="User Avatar" 
+                          width={32} 
+                          height={32}
+                          className="object-cover"
+                        />
+                      </div>
+                    </Button>
+                  </DropdownMenuTrigger>
+                  <DropdownMenuContent align="end" className="w-56 bg-white">
+                    <DropdownMenuLabel className="font-normal">
+                      <div className="flex items-center gap-3">
+                        <div className="relative w-10 h-10 rounded-full overflow-hidden bg-gray-200 shrink-0">
+                          <Image 
+                            src={user?.avatar || "https://i.pravatar.cc/150?img=12"} 
+                            alt="User Avatar" 
+                            width={40} 
+                            height={40}
+                            className="object-cover"
+                          />
+                        </div>
+                        <div className="flex flex-col space-y-1">
+                          <p className="text-sm font-semibold leading-none">
+                            {user?.firstName} {user?.lastName}
+                          </p>
+                          <p className="text-xs leading-none text-muted-foreground">
+                            {user?.email}
+                          </p>
+                        </div>
+                      </div>
+                    </DropdownMenuLabel>
+                    <DropdownMenuSeparator />
+                    <DropdownMenuItem className="cursor-pointer hover:bg-gray-100" asChild>
+                      <Link href="/profile" className="flex items-center">
+                        <UserCircle className="mr-2 h-4 w-4" />
+                        <span>Profile</span>
+                      </Link>
+                    </DropdownMenuItem>
+                    <DropdownMenuItem className="cursor-pointer hover:bg-gray-100" asChild>
+                      <Link href="/cart" className="flex items-center">
+                        <Package className="mr-2 h-4 w-4" />
+                        <span>Orders</span>
+                      </Link>
+                    </DropdownMenuItem>
+                    <DropdownMenuItem className="cursor-pointer hover:bg-gray-100" asChild>
+                      <Link href="/settings" className="flex items-center">
+                        <Settings className="mr-2 h-4 w-4" />
+                        <span>Settings</span>
+                      </Link>
+                    </DropdownMenuItem>
+                    <DropdownMenuSeparator />
+                    <DropdownMenuItem 
+                      className="cursor-pointer text-red-600 hover:text-red-600 hover:bg-red-50 focus:text-red-600 focus:bg-red-50"
+                      onClick={logout}
+                    >
+                      <LogOut className="mr-2 h-4 w-4" />
+                      <span>Log out</span>
+                    </DropdownMenuItem>
+                  </DropdownMenuContent>
+                </DropdownMenu>
+              ) : (
+                <Button
+                  variant="ghost"
+                  size="icon-sm"
+                  className="transition-transform cursor-pointer hover:scale-110 active:scale-95"
+                  aria-label="User Account"
+                  asChild
+                >
+                  <Link href="/auth/login">
+                    <User className="h-5 w-5" />
+                  </Link>
+                </Button>
+              )}
 
               {/* Mobile Menu Toggle */}
               <Button

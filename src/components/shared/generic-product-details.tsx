@@ -9,6 +9,7 @@ import { cn } from "@/lib/utils";
 import { Input } from "../ui/input";
 import { Textarea } from "../ui/textarea";
 import { useWishlist } from "@/contexts/wishlist-context";
+import { useCart } from "@/contexts/cart-context";
 import { toast } from "sonner";
 
 interface GenericProduct {
@@ -72,6 +73,7 @@ export function GenericProductDetails({ productId, category, apiPath }: GenericP
   const [hoverRating, setHoverRating] = useState(0);
 
   const { addToWishlist, isInWishlist } = useWishlist();
+  const { addToCart } = useCart();
   const fileInputRef = useRef<HTMLInputElement>(null);
 
   const handleWishlistToggle = () => {
@@ -91,6 +93,24 @@ export function GenericProductDetails({ productId, category, apiPath }: GenericP
           description: `${product.brand ? `${product.brand} ` : ""}${productName} has been added to your wishlist.`,
         });
       }
+    }
+  };
+
+  const handleAddToCart = () => {
+    if (product) {
+      const productName = product.title || product.name || product.model || "Product";
+      addToCart({
+        id: product.id,
+        title: product.brand ? `${product.brand} ${productName}` : productName,
+        price: product.price || 0,
+        image: product.image,
+        category,
+        selectedStorage,
+        selectedColor: colors[selectedColor],
+      });
+      toast.success("Added to cart!", {
+        description: `${product.brand ? `${product.brand} ` : ""}${productName} has been added to your cart.`,
+      });
     }
   };
 
@@ -415,8 +435,11 @@ export function GenericProductDetails({ productId, category, apiPath }: GenericP
                 />
                 Add to Wishlist
               </Button>
-              <Button className="flex-1 cursor-pointer bg-black text-white hover:bg-gray-900 h-14 text-base font-medium rounded-lg">
-                Add to Card
+              <Button 
+                onClick={handleAddToCart}
+                className="flex-1 cursor-pointer bg-black text-white hover:bg-gray-900 h-14 text-base font-medium rounded-lg"
+              >
+                Add to Cart
               </Button>
             </div>
 

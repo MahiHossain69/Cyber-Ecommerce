@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { useWishlist } from "@/contexts/wishlist-context";
+import { useCart } from "@/contexts/cart-context";
 import { toast } from "sonner";
 
 interface Product {
@@ -32,6 +33,7 @@ export function NewArrival() {
   const [allProducts, setAllProducts] = useState<Product[]>([]);
   const [loading, setLoading] = useState(true);
   const { addToWishlist, removeFromWishlist, isInWishlist } = useWishlist();
+  const { addToCart } = useCart();
 
   useEffect(() => {
     // Fetch products from new API
@@ -70,6 +72,22 @@ export function NewArrival() {
         description: `${product.name} has been added to your wishlist.`,
       });
     }
+  };
+
+  const handleBuyNow = (e: React.MouseEvent, product: Product) => {
+    e.preventDefault();
+    e.stopPropagation();
+    
+    addToCart({
+      id: product.id,
+      title: product.name,
+      price: product.price,
+      image: product.image,
+      category: getCategoryLink(product.category).replace('/', ''),
+    });
+    toast.success("Added to cart!", {
+      description: `${product.name} has been added to your cart.`,
+    });
   };
 
   // Filter products based on active tab
@@ -210,7 +228,10 @@ export function NewArrival() {
                   </span>
                 </div>
                 <Link href={getCategoryLink(product.category)}>
-                  <Button className="w-full cursor-pointer bg-black text-white hover:bg-gray-900 rounded-lg h-12 text-sm font-medium transition-colors">
+                  <Button 
+                    onClick={(e) => handleBuyNow(e, product)}
+                    className="w-full cursor-pointer bg-black text-white hover:bg-gray-900 rounded-lg h-12 text-sm font-medium transition-colors"
+                  >
                     Buy Now
                   </Button>
                 </Link>
