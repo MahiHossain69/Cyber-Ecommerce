@@ -1,36 +1,122 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🛒 Cyber E-Commerce
 
-## Getting Started
+A modern, high-performance e-commerce web application built with **Next.js** and **TypeScript**, designed to deliver a clean shopping experience with scalable architecture and responsive UI.
 
-First, run the development server:
+🔗 **Live Demo:** https://cyber-ecommerce-orpin.vercel.app  
+📂 **Repository:** https://github.com/MahiHossain69/Cyber-Ecommerce
+
+---
+
+## 📌 Overview
+
+Cyber E-Commerce is a frontend-focused e-commerce platform showcasing product listings, category management, shopping cart functionality, and a responsive user interface optimized for modern devices.
+
+This project demonstrates strong frontend architecture, reusable components, and scalable folder structure suitable for real-world production applications.
+
+---
+
+## ✨ Key Features
+
+- 🛍️ Dynamic Product Listing
+- 🛒 Shopping Cart Functionality
+- 🏷️ Category-Based Filtering
+- 📱 Fully Responsive Design
+- ⚡ Optimized Performance with Next.js
+- 🧠 Type-Safe Development with TypeScript
+- 🎨 Modern UI Styling
+- 🔥 Clean Component-Based Architecture
+
+---
+
+## 🛠 Tech Stack
+
+| Technology | Purpose |
+|------------|----------|
+| **Next.js** | React framework with SSR & routing |
+| **TypeScript** | Static type checking |
+| **React** | Component-based UI development |
+| **Tailwind CSS / CSS** | Styling |
+| **Vercel** | Deployment & hosting |
+
+---
+
+## 📂 Project Structure
+
+Cyber-Ecommerce/
+│
+├── app/ or pages/ # Application routes
+├── components/ # Reusable UI components
+├── data/ # Static product data / APIs
+├── public/ # Static assets
+├── styles/ # Global styles
+├── package.json # Dependencies & scripts
+├── tsconfig.json # TypeScript configuration
+└── README.md # Documentation
+
+
+---
+
+## 🚀 Getting Started
+
+### 1️⃣ Clone the Repository
 
 ```bash
+git clone https://github.com/MahiHossain69/Cyber-Ecommerce.git
+cd Cyber-Ecommerce
+2️⃣ Install Dependencies
+npm install
+# or
+yarn install
+3️⃣ Run Development Server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Visit:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+http://localhost:3000
+🏗 Build for Production
+npm run build
+npm start
+🌍 Deployment
+This project is deployed on Vercel.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+To deploy your own version:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Push your repository to GitHub
 
-## Learn More
+Connect it to Vercel
 
-To learn more about Next.js, take a look at the following resources:
+Enable automatic deployments
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+🎯 Why This Project?
+This project highlights:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Clean folder structure
 
-## Deploy on Vercel
+Reusable component design
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Frontend state handling
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Scalable architecture
+
+Production-ready deployment
+
+It serves as a strong portfolio project for frontend developer roles.
+
+🤝 Contributing
+Contributions are welcome.
+
+Fork the repository
+
+Create a feature branch
+
+Commit your changes
+
+Submit a Pull Request
+
+📄 License
+This project is currently unlicensed.
+You may add an MIT License if you plan to make it open-source.
+
+👨‍💻 Author
+Mahii Hossain
+Frontend Developer
+GitHub: https://github.com/MahiHossain69
